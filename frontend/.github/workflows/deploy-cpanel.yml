@@ -1,0 +1,95 @@
+name: Deploy frontend to cPanel
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cpanel-frontend-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out frontend
+        uses: actions/checkout@v4
+
+      - name: Prepare SSH connection
+        env:
+          CPANEL_SSH_HOST: ${{ secrets.CPANEL_SSH_HOST }}
+          CPANEL_SSH_PORT: ${{ secrets.CPANEL_SSH_PORT }}
+          CPANEL_SSH_PRIVATE_KEY: ${{ secrets.CPANEL_SSH_PRIVATE_KEY }}
+          CPANEL_SSH_KNOWN_HOSTS: ${{ secrets.CPANEL_SSH_KNOWN_HOSTS }}
+        run: |
+          set -eu
+          test -n "$CPANEL_SSH_HOST"
+          test -n "$CPANEL_SSH_PORT"
+          test -n "$CPANEL_SSH_PRIVATE_KEY"
+          test -n "$CPANEL_SSH_KNOWN_HOSTS"
+          install -m 700 -d "$HOME/.ssh"
+          printf '%s\n' "$CPANEL_SSH_PRIVATE_KEY" > "$HOME/.ssh/cpanel_deploy_key"
+          chmod 600 "$HOME/.ssh/cpanel_deploy_key"
+          printf '%s\n' "$CPANEL_SSH_KNOWN_HOSTS" > "$HOME/.ssh/known_hosts"
+          chmod 600 "$HOME/.ssh/known_hosts"
+
+      - name: Package frontend files
+        run: |
+          set -eu
+          tar -czf "$RUNNER_TEMP/frontend.tar.gz" \
+            --exclude='./.git' \
+            --exclude='./.github' \
+            --exclude='./.gitignore' \
+            --exclude='./README.md' \
+            -C . .
+
+      - name: Upload frontend package
+        env:
+          CPANEL_SSH_HOST: ${{ secrets.CPANEL_SSH_HOST }}
+          CPANEL_SSH_PORT: ${{ secrets.CPANEL_SSH_PORT }}
+          CPANEL_SSH_USER: ${{ secrets.CPANEL_SSH_USER }}
+          CPANEL_SSH_PRIVATE_KEY: ${{ secrets.CPANEL_SSH_PRIVATE_KEY }}
+        run: |
+          set -eu
+          test -n "$CPANEL_SSH_USER"
+          archive_name="easyhealthcare-frontend-${GITHUB_SHA}.tar.gz"
+          printf '%s\n' "$CPANEL_SSH_PRIVATE_KEY" > "$HOME/.ssh/cpanel_deploy_key"
+          chmod 600 "$HOME/.ssh/cpanel_deploy_key"
+          scp -P "$CPANEL_SSH_PORT" \
+            -i "$HOME/.ssh/cpanel_deploy_key" \
+            -o IdentitiesOnly=yes \
+            -o StrictHostKeyChecking=yes \
+            -o UserKnownHostsFile="$HOME/.ssh/known_hosts" \
+            "$RUNNER_TEMP/frontend.tar.gz" \
+            "$CPANEL_SSH_USER@$CPANEL_SSH_HOST:/tmp/$archive_name"
+
+      - name: Extract files into cPanel document root
+        env:
+          CPANEL_SSH_HOST: ${{ secrets.CPANEL_SSH_HOST }}
+          CPANEL_SSH_PORT: ${{ secrets.CPANEL_SSH_PORT }}
+          CPANEL_SSH_USER: ${{ secrets.CPANEL_SSH_USER }}
+          CPANEL_SSH_PRIVATE_KEY: ${{ secrets.CPANEL_SSH_PRIVATE_KEY }}
+          CPANEL_DOCUMENT_ROOT: ${{ secrets.CPANEL_DOCUMENT_ROOT }}
+          ARCHIVE_NAME: easyhealthcare-frontend-${{ github.sha }}.tar.gz
+        run: |
+          set -eu
+          test -n "$CPANEL_SSH_USER"
+          test -n "$CPANEL_DOCUMENT_ROOT"
+          archive_name="easyhealthcare-frontend-${GITHUB_SHA}.tar.gz"
+          printf '%s\n' "$CPANEL_SSH_PRIVATE_KEY" > "$HOME/.ssh/cpanel_deploy_key"
+          chmod 600 "$HOME/.ssh/cpanel_deploy_key"
+          remote_directory=$(python3 -c 'import os, shlex; print(shlex.quote(os.environ["CPANEL_DOCUMENT_ROOT"]))')
+          remote_archive=$(python3 -c 'import os, shlex; print(shlex.quote("/tmp/" + os.environ["ARCHIVE_NAME"]))')
+          ssh -p "$CPANEL_SSH_PORT" \
+            -i "$HOME/.ssh/cpanel_deploy_key" \
+            -o IdentitiesOnly=yes \
+            -o StrictHostKeyChecking=yes \
+            -o UserKnownHostsFile="$HOME/.ssh/known_hosts" \
+            "$CPANEL_SSH_USER@$CPANEL_SSH_HOST" \
+            "mkdir -p $remote_directory && tar -xzf $remote_archive -C $remote_directory && rm -f $remote_archive"
