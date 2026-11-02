@@ -3,25 +3,25 @@
   <div class="page-content-inner">
     <div class="footer-columns">
       <section class="footer-column" aria-labelledby="footer-about-title">
-        <a class="footer-brand" href="<?= $footerBaseUrl ?>/index.php">
-          <img src="<?= $footerBaseUrl ?>/assets/images/logo.png" alt="">
+        <a class="footer-brand" href="<?= $footerBaseUrl ?>/">
+          <img src="<?= $footerBaseUrl ?>/assets/images/logo.png" alt="ইজি হেলথকেয়ার">
           <span>ইজি হেলথকেয়ার</span>
         </a>
         <p>ডায়াগনস্টিক ও কনসালটেশন সেবার অনলাইন প্ল্যাটফর্ম।</p>
       </section>
       <nav class="footer-column" aria-labelledby="footer-links-title">
         <h2 id="footer-links-title">দ্রুত লিংক</h2>
-        <a href="<?= $footerBaseUrl ?>/index.php">হোম</a>
-        <a href="<?= $footerBaseUrl ?>/pages/complaint-box.php">অভিযোগ বক্স</a>
-        <a href="<?= $footerBaseUrl ?>/pages/patient-portal.php">পেশেন্ট পোর্টাল</a>
+        <a href="<?= $footerBaseUrl ?>/">হোম</a>
+        <a href="<?= $footerBaseUrl ?>/complaint-box">অভিযোগ বক্স</a>
+        <a href="<?= $footerBaseUrl ?>/patient-portal">পেশেন্ট পোর্টাল</a>
       </nav>
       <nav class="footer-column" aria-labelledby="footer-services-title">
         <h2 id="footer-services-title">সেবা ও সহায়তা</h2>
-        <a href="<?= $footerBaseUrl ?>/pages/lab-report.php">অনলাইন ল্যাব রিপোর্ট</a>
-        <a href="<?= $footerBaseUrl ?>/pages/safe-surgery.php">সেফ সার্জারি</a>
-        <a href="<?= $footerBaseUrl ?>/pages/subscription-plan.php">সাবস্ক্রিপশন প্ল্যান</a>
-        <a href="<?= $footerBaseUrl ?>/pages/ambulance-booking.php">বুক অ্যাম্বুলেন্স</a>
-        <a href="<?= $footerBaseUrl ?>/pages/doctor-portal.php">ডাক্তার পোর্টাল</a>
+        <a href="<?= $footerBaseUrl ?>/lab-report">অনলাইন ল্যাব রিপোর্ট</a>
+        <a href="<?= $footerBaseUrl ?>/safe-surgery">সেফ সার্জারি</a>
+        <a href="<?= $footerBaseUrl ?>/subscription-plan">সাবস্ক্রিপশন প্ল্যান</a>
+        <a href="<?= $footerBaseUrl ?>/ambulance-booking">বুক অ্যাম্বুলেন্স</a>
+        <a href="<?= $footerBaseUrl ?>/doctor-portal">ডাক্তার পোর্টাল</a>
       </nav>
     </div>
     <div class="footer-bottom">

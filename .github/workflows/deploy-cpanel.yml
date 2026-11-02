@@ -22,6 +22,20 @@ jobs:
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         run: |
+          set -e
+          echo "Connecting to FTP server..."
+
+          # Smart detection: check if public_html exists inside FTP root, or if we are already in public_html
+          TARGET_DIR="."
+          if lftp -u "$FTP_USERNAME","$FTP_PASSWORD" -e "set ftp:ssl-allow no; set net:timeout 15; cd public_html; bye" "$FTP_SERVER" 2>/dev/null; then
+            echo ">>> Detected public_html directory. Uploading files into public_html/..."
+            TARGET_DIR="public_html"
+          else
+            echo ">>> Already inside target public_html root. Uploading files directly into ./..."
+            TARGET_DIR="."
+          fi
+
+          echo "Starting file sync to \$TARGET_DIR..."
           lftp -c "
             set ftp:ssl-allow no;
             set net:timeout 30;
@@ -30,7 +44,9 @@ jobs:
             mirror --reverse --verbose \
               --exclude-glob .git* \
               --exclude-glob .github* \
+              --exclude-glob router.php \
               --exclude README.md \
-              ./frontend/ public_html/;
+              ./frontend/ \$TARGET_DIR/;
             bye
           "
+          echo ">>> Deployment completed successfully into public_html!"

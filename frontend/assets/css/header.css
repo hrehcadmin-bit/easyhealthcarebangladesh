@@ -107,7 +107,10 @@ a {
 
 .mainbar {
   position: relative;
-  background: #fff;
+  background:
+    radial-gradient(ellipse at 82% 28%, rgb(220 213 236 / 55%), transparent 34%),
+    linear-gradient(115deg, #f8f6fb 0%, #fbfaff 54%, #f0edf7 100%);
+  border-bottom: 1px solid var(--health-line);
 }
 
 .mainbar-inner {
@@ -139,8 +142,8 @@ a {
 .navigation-list {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: clamp(8px, 1.15vw, 18px);
+  justify-content: flex-end;
+  gap: clamp(14px, 1.6vw, 24px);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -156,8 +159,8 @@ a {
   align-items: center;
   padding: 4px 0;
   color: var(--health-ink);
-  font-size: clamp(13px, 1vw, 15px);
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   white-space: nowrap;
 }
 
@@ -177,7 +180,7 @@ a {
   display: inline-flex;
   min-height: 42px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 6px;
   padding: 0 4px;
   color: var(--health-primary);
@@ -201,7 +204,7 @@ a {
   display: inline-flex;
   min-height: 42px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 8px;
   padding: 0 14px;
   border: 1px solid var(--health-red);
@@ -217,6 +220,18 @@ a {
 .emergency-button:focus-visible {
   border-color: #b91c1c;
   color: #b91c1c;
+}
+
+.emergency-button svg:last-child,
+.subscription-button svg:last-child {
+  width: 15px;
+  height: 15px;
+  transition: transform .18s ease;
+}
+
+.emergency-button:hover svg:last-child,
+.subscription-button:hover svg:last-child {
+  transform: translateX(3px);
 }
 
 .emergency-button svg {
@@ -336,7 +351,7 @@ a {
   display: inline-flex;
   min-height: 48px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 9px;
   padding: 0 19px;
   border: 1px solid var(--health-primary);
@@ -933,7 +948,7 @@ a {
 
 .utility-home-link {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 28px;
 }
 
@@ -1090,7 +1105,7 @@ a {
 
   .topbar-inner {
     min-height: 36px;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .welcome-message {
@@ -1119,7 +1134,19 @@ a {
     font-size: 11px;
   }
 
-  .emergency-button svg {
+  .emergency-button svg:last-child,
+.subscription-button svg:last-child {
+  width: 15px;
+  height: 15px;
+  transition: transform .18s ease;
+}
+
+.emergency-button:hover svg:last-child,
+.subscription-button:hover svg:last-child {
+  transform: translateX(3px);
+}
+
+.emergency-button svg {
     width: 16px;
     height: 16px;
   }
@@ -1329,4 +1356,96 @@ a {
   html {
     scroll-behavior: auto;
   }
+}
+
+
+/* ==========================================================================
+   Maintenance Notice Section
+   ========================================================================== */
+.maintenance-section {
+  min-height: calc(100vh - 220px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background:
+    radial-gradient(ellipse at 82% 28%, rgb(220 213 236 / 55%), transparent 34%),
+    linear-gradient(115deg, #f8f6fb 0%, #fbfaff 54%, #f0edf7 100%);
+  position: relative;
+}
+
+.maintenance-card {
+  max-width: 680px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #ebe5f2;
+  border-radius: 24px;
+  padding: 48px 36px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(68, 57, 98, 0.08);
+  position: relative;
+  z-index: 2;
+}
+
+.maintenance-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  background: #f1ecf9;
+  color: var(--health-primary);
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.maintenance-badge svg {
+  width: 16px;
+  height: 16px;
+}
+
+.maintenance-title {
+  margin: 0 0 16px;
+  color: var(--health-primary);
+  font-size: clamp(26px, 4vw, 36px);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.maintenance-title span {
+  color: #806bb1;
+}
+
+.maintenance-desc {
+  color: var(--health-muted);
+  font-size: 16px;
+  line-height: 1.85;
+  margin: 0 auto 30px;
+  max-width: 540px;
+}
+
+.maintenance-contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 24px;
+  border-top: 1px solid #f0edf4;
+}
+
+.maintenance-contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--health-primary);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.maintenance-contact-item svg {
+  width: 17px;
+  height: 17px;
+  color: var(--health-primary);
 }

@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# 1. Do not rewrite if file or directory exists (css, js, images, etc.)
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 2. Homepage clean URL
+RewriteRule ^$ index.php [L]
+
+# 3. Clean URLs for files in pages/ folder (e.g. /find-doctor -> pages/find-doctor.php)
+RewriteCond %{DOCUMENT_ROOT}/pages/$1.php -f [OR]
+RewriteCond pages/$1.php -f
+RewriteRule ^([a-zA-Z0-9_-]+)/?$ pages/$1.php [L,QSA]
+
+# 4. Clean URLs for any .php file in root (e.g. /about -> about.php)
+RewriteCond %{DOCUMENT_ROOT}/$1.php -f [OR]
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([a-zA-Z0-9_-]+)/?$ $1.php [L,QSA]
+</IfModule>
+
