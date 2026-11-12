@@ -1,6 +1,6 @@
 <?php
 $mainNavigationPage = [
-  'title' => 'মেডিক্যাল ট্যুরিজম',
-  'description' => 'চিকিৎসার প্রয়োজনে ভ্রমণ ও সংশ্লিষ্ট সেবার তথ্য এখানে পাওয়া যাবে।',
+  'title' => 'Medical Tourism',
+  'description' => 'Comprehensive international healthcare travel support, top hospital admissions, and doctor appointments abroad.',
 ];
 require __DIR__ . '/../includes/main-navigation-page.php';

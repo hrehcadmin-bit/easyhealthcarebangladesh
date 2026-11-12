@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="bn">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0D9488">
-  <title>ইজি হেলথকেয়ার — আপনার স্বাস্থ্য, আপনার হাতে</title>
+  <title>Easy Healthcare — Healthcare Simplified</title>
   <link rel="icon" type="image/png" href="assets/images/fevicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,22 +23,22 @@
       <div class="maintenance-card">
         <div class="maintenance-badge">
           <i data-lucide="hammer" aria-hidden="true"></i>
-          <span>উন্নয়ন কার্যক্রম চলমান</span>
+          <span>Under Active Development</span>
         </div>
         
         <h1 class="maintenance-title" id="maintenance-title">
-          আমাদের সকল পেজের <span>কার্যক্রম চলছে</span>
+          Our Full Platform <span>Is Launching Soon</span>
         </h1>
         
 
         <div class="maintenance-contact">
           <div class="maintenance-contact-item">
             <i data-lucide="phone-call" aria-hidden="true"></i>
-            <span>জরুরি হেল্পলাইন: +৮৮০৯৬১১৮৩৩৫৯৬</span>
+            <span>Emergency Helpline: +8809611833596</span>
           </div>
           <div class="maintenance-contact-item">
             <i data-lucide="mail" aria-hidden="true"></i>
-            <span>ইমেইল: info@easyhealthcare.com.bd</span>
+            <span>Email: info@easyhealthcare.com.bd</span>
           </div>
         </div>
       </div>

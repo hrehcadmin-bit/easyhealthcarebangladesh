@@ -4,12 +4,12 @@ if (!isset($baseUrl)) {
 }
 ?>
 <!doctype html>
-<html lang="bn">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0D9488">
-  <title><?= htmlspecialchars($mainNavigationPage['title'], ENT_QUOTES, 'UTF-8') ?> — ইজি হেলথকেয়ার</title>
+  <title><?= htmlspecialchars($mainNavigationPage['title'], ENT_QUOTES, 'UTF-8') ?> — Easy Healthcare</title>
   <link rel="icon" type="image/png" href="<?= $baseUrl ?>/assets/images/fevicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,11 +25,11 @@ if (!isset($baseUrl)) {
     <section class="section-block how-section" aria-labelledby="main-navigation-page-title">
       <div class="page-content-inner">
         <div class="section-heading">
-          <p class="section-eyebrow">ইজি হেলথকেয়ার</p>
+          <p class="section-eyebrow">Easy Healthcare</p>
           <h1 id="main-navigation-page-title"><?= htmlspecialchars($mainNavigationPage['title'], ENT_QUOTES, 'UTF-8') ?></h1>
           <p><?= htmlspecialchars($mainNavigationPage['description'], ENT_QUOTES, 'UTF-8') ?></p>
         </div>
-        <p class="utility-notice">এই পেজের বিস্তারিত তথ্য ও ডিজাইন পরবর্তীতে যোগ করা হবে।</p>
+        <p class="utility-notice">Detailed information and features for this page will be launched soon.</p>
       </div>
     </section>
   </main>

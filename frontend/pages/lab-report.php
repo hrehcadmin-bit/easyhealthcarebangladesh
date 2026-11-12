@@ -1,13 +1,13 @@
 <?php
 $utilityPage = [
-  'title' => 'অনলাইন ল্যাব রিপোর্ট',
-  'eyebrow' => 'আপনার রিপোর্ট, সহজেই',
-  'description' => 'ডায়াগনস্টিক পরীক্ষার রিপোর্ট অনলাইনে দেখার জন্য ইজি হেলথকেয়ারের ল্যাব রিপোর্ট পেজ।',
-  'notice' => 'রিপোর্ট খোঁজা ও দেখার অনলাইন সুবিধাটি এখনো চালু হয়নি। সেবাটি চালু হলে রিপোর্টের তথ্য দিয়ে এখান থেকে রিপোর্ট দেখা যাবে।',
+  'title' => 'Online Lab Reports',
+  'eyebrow' => 'Diagnostic Results at Your Fingertips',
+  'description' => 'Fast, verified, and confidential digital access to your pathology and diagnostic laboratory test results.',
+  'notice' => 'Digital report lookup with Patient ID and Invoice Number is integrating with partner labs. Reports can also be requested via hotline.',
   'features' => [
-    ['icon' => 'file-heart', 'title' => 'রিপোর্ট দেখুন', 'description' => 'অনলাইনে আপনার ডায়াগনস্টিক রিপোর্ট দেখার সুবিধা এখানে যুক্ত হবে।'],
-    ['icon' => 'clipboard-list', 'title' => 'রিপোর্টের তথ্য', 'description' => 'রিপোর্ট খুঁজতে প্রয়োজনীয় তথ্য কীভাবে ব্যবহার করবেন তা এখানে জানানো হবে।'],
-    ['icon' => 'lock-keyhole', 'title' => 'নিরাপদ প্রবেশ', 'description' => 'ব্যক্তিগত স্বাস্থ্যতথ্যে নিরাপদ প্রবেশের সুবিধা সেবাটির অংশ হবে।'],
+    ['icon' => 'file-heart', 'title' => 'Instant Digital PDF', 'description' => 'Download and share verified diagnostic reports with your physician anywhere, anytime.'],
+    ['icon' => 'clipboard-list', 'title' => 'Historical Trends', 'description' => 'Track your key health markers like blood sugar, lipid profile, and CBC over time.'],
+    ['icon' => 'lock-keyhole', 'title' => 'Encrypted & Secure', 'description' => 'Your medical records and private health results are safeguarded with strict encryption standards.'],
   ],
 ];
 require __DIR__ . '/../includes/utility-page.php';

@@ -1,13 +1,13 @@
 <?php
 $utilityPage = [
-  'title' => 'লগইন / সাইন আপ',
-  'eyebrow' => 'ইজি হেলথকেয়ার পোর্টাল',
-  'description' => 'পেশেন্ট ও ডক্টর পোর্টাল একাউন্টে নিরাপদ লগইন এবং নতুন রেজিস্ট্রেশন।',
-  'notice' => 'লগইন এবং সাইন আপ সিস্টেমটি খুব শীঘ্রই উন্মুক্ত করা হবে। যেকোনো স্বাস্থ্যসেবায় সহযোগিতার জন্য আমাদের হটলাইনে যোগাযোগ করতে পারেন।',
+  'title' => 'Login / Sign Up',
+  'eyebrow' => 'Easy Healthcare Portal Access',
+  'description' => 'Secure account login and new account registration for Patients, Doctors, and Corporate Partners.',
+  'notice' => 'Our integrated authentication system is opening shortly. For immediate assistance with appointments or records, reach our 24/7 hotline.',
   'features' => [
-    ['icon' => 'user-round', 'title' => 'পেশেন্ট লগইন', 'description' => 'আপনার প্রেসক্রিপশন, রিপোর্ট ও অ্যাপয়েন্টমেন্ট হিস্ট্রি দেখতে লগইন করুন।'],
-    ['icon' => 'stethoscope', 'title' => 'ডক্টর লগইন', 'description' => 'ডক্টর প্যানেলে প্রবেশ করে রোগী তালিকা ও অ্যাপয়েন্টমেন্ট শিডিউল পরিচালনা করুন।'],
-    ['icon' => 'user-plus', 'title' => 'নতুন অ্যাকাউন্ট তৈরি', 'description' => 'সহজেই মোবাইল নম্বর অথবা ইমেইল দিয়ে নতুন অ্যাকাউন্ট রেজিস্ট্রেশন করুন।'],
+    ['icon' => 'user-round', 'title' => 'Patient Login', 'description' => 'Access your digital prescriptions, lab test reports, and appointment history.'],
+    ['icon' => 'stethoscope', 'title' => 'Doctor Login', 'description' => 'Access your clinical dashboard to view schedules, patient queues, and telemedicine calls.'],
+    ['icon' => 'user-plus', 'title' => 'Create New Account', 'description' => 'Quick registration with your mobile number or email in under 30 seconds.'],
   ],
 ];
 require __DIR__ . '/../includes/utility-page.php';

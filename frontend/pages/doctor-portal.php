@@ -1,13 +1,13 @@
 <?php
 $utilityPage = [
-  'title' => 'ডাক্তার পোর্টাল',
-  'eyebrow' => 'চিকিৎসকদের জন্য',
-  'description' => 'ইজি হেলথকেয়ারের সঙ্গে যুক্ত চিকিৎসকদের সেবা ও প্রোফাইল ব্যবস্থাপনার পোর্টাল।',
-  'notice' => 'ডাক্তার পোর্টালে নিবন্ধন ও প্রবেশের সুবিধাটি এখনো চালু হয়নি। চালু হলে চিকিৎসকেরা এখান থেকে পোর্টালে প্রবেশ করতে পারবেন।',
+  'title' => 'Doctor Portal',
+  'eyebrow' => 'Dedicated for Medical Specialists',
+  'description' => 'Comprehensive management portal for BMDC-registered doctors and healthcare specialists partner network.',
+  'notice' => 'Doctor onboarding and portal login are currently in beta testing. Registered doctors will receive login credentials soon.',
   'features' => [
-    ['icon' => 'id-card', 'title' => 'চিকিৎসক প্রোফাইল', 'description' => 'নিজের পেশাগত পরিচিতি ও সেবার তথ্য ব্যবস্থাপনার সুবিধা থাকবে।'],
-    ['icon' => 'calendar-days', 'title' => 'অ্যাপয়েন্টমেন্ট', 'description' => 'রোগীদের অ্যাপয়েন্টমেন্টের তথ্য দেখার সুবিধা যুক্ত হবে।'],
-    ['icon' => 'stethoscope', 'title' => 'সেবা ব্যবস্থাপনা', 'description' => 'ইজি হেলথকেয়ারে দেওয়া সেবাগুলো এক জায়গা থেকে ব্যবস্থাপনা করা যাবে।'],
+    ['icon' => 'id-card', 'title' => 'Specialist Profile', 'description' => 'Manage chamber locations, consultation hours, fees, and professional credentials easily.'],
+    ['icon' => 'calendar-days', 'title' => 'Appointment Roster', 'description' => 'View, accept, and manage daily patient queues, online teleconsultations, and follow-ups.'],
+    ['icon' => 'stethoscope', 'title' => 'Clinical Records', 'description' => 'Safely write digital prescriptions and review prior patient history and diagnostic lab results.'],
   ],
 ];
 require __DIR__ . '/../includes/utility-page.php';

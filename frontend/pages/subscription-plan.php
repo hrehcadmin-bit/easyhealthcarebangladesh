@@ -5,113 +5,113 @@ if (!isset($baseUrl)) {
 
 $plans = [
   [
-    'name' => 'বেসিক কেয়ার',
-    'subtitle' => 'একক ব্যক্তিদের স্বাস্থ্য সুরক্ষার জন্য আদর্শ',
-    'price' => '৪৯৯',
-    'period' => 'টাকা / মাস',
+    'name' => 'Basic Care',
+    'subtitle' => 'Ideal for individual personal health protection',
+    'price' => '499',
+    'period' => 'BDT / Month',
     'featured' => false,
     'badge' => '',
-    'btn_text' => 'বেসিক প্ল্যান নিন',
+    'btn_text' => 'Get Basic Plan',
     'btn_class' => 'pricing-card-btn pricing-card-btn-outline',
     'features' => [
-      'মাসে ১টি ফ্রি বিশেষজ্ঞ ডাক্তার ভিডিও কনসালটেশন',
-      'ডায়াগনস্টিক ও ল্যাব টেস্টে ১৫% ফ্ল্যাট ডিসকাউন্ট',
-      'ডিজিটাল প্রেসক্রিপশন ও হেলথ রেকর্ড ক্লাউড সংরক্ষণ',
-      '২৪/৭ ডেডিকেটেড অনলাইন স্বাস্থ্য চ্যাট সাপোর্ট',
-      'ফার্মেসি মেডিসিন অর্ডারে ৫% অতিরিক্ত ছাড়',
+      '1 Free Specialist Doctor Video Consultation per month',
+      '15% Flat Discount on diagnostic and lab tests',
+      'Digital prescription and cloud health record storage',
+      '24/7 Dedicated online health chat support',
+      '5% Extra discount on partner pharmacy medicine orders',
     ],
   ],
   [
-    'name' => 'ফ্যামিলি প্রটেক্ট',
-    'subtitle' => 'সর্বোচ্চ ৪ জন পরিবারের সদস্যের পূর্ণাঙ্গ যত্ন',
-    'price' => '১,১৯৯',
-    'period' => 'টাকা / মাস',
+    'name' => 'Family Protect',
+    'subtitle' => 'Comprehensive healthcare for up to 4 family members',
+    'price' => '1,199',
+    'period' => 'BDT / Month',
     'featured' => true,
-    'badge' => 'সর্বাধিক জনপ্রিয়',
-    'btn_text' => 'ফ্যামিলি প্ল্যান নিন',
+    'badge' => 'Most Popular',
+    'btn_text' => 'Get Family Plan',
     'btn_class' => 'pricing-card-btn',
     'features' => [
-      'পরিবারে ৪ জন সদস্যের কমপ্লিট হেলথ কভারেজ',
-      'মাসে ৪টি ফ্রি বিশেষজ্ঞ ডাক্তার ভিডিও কনসালটেশন',
-      'সব ধরনের ডায়াগনস্টিক ও ল্যাব টেস্টে ২৫% ছাড়',
-      '১টি ফ্রি বার্ষিক ফুল বডি রুটিন হেলথ চেকআপ',
-      'বাসা থেকে ফ্রি ব্লাড ও ল্যাব স্যাম্পল কালেকশন',
-      'জরুরি অ্যাম্বুলেন্স সার্ভিসে ২০% বিশেষ ছাড়',
+      'Full coverage for up to 4 family members',
+      '4 Free Specialist Doctor Video Consultations per month',
+      '25% Discount on all diagnostic and pathology tests',
+      '1 Free Annual Full Body routine health checkup',
+      'Free in-home blood and lab sample collection',
+      '20% Special discount on emergency ambulance services',
     ],
   ],
   [
-    'name' => 'প্রিমিয়াম গোল্ড কেয়ার',
-    'subtitle' => 'বয়োজ্যেষ্ঠ ও দীর্ঘমেয়াদী রোগীদের জন্য স্পেশাল কেয়ার',
-    'price' => '২,৪৯৯',
-    'period' => 'টাকা / মাস',
+    'name' => 'Premium Gold Care',
+    'subtitle' => 'Specialized care for seniors & chronic condition management',
+    'price' => '2,499',
+    'period' => 'BDT / Month',
     'featured' => false,
     'badge' => '',
-    'btn_text' => 'প্রিমিয়াম প্ল্যান নিন',
+    'btn_text' => 'Get Premium Plan',
     'btn_class' => 'pricing-card-btn pricing-card-btn-outline',
     'features' => [
-      'আনলিমিটেড জেনারেল ফিজিশিয়ান কনসালটেশন',
-      'মাসে ২টি সিনিয়র স্পেশালিস্ট হোম বা ভিডিও ভিজিট',
-      'ডায়াগনস্টিক ও টেস্টে ৩৫% সর্বোচ্চ ছাড়',
-      'সার্বক্ষণিক ডেডিকেটেড পারসোনাল কেয়ার ম্যানেজার',
-      'বছরে ১টি ফ্রি জরুরি অ্যাম্বুলেন্স সাপোর্ট',
-      'ফ্রি মাসিক ডায়াবেটিস ও প্রেশার মনিটরিং হোম ভিজিট',
+      'Unlimited General Physician video consultations',
+      '2 Senior Specialist home visits or video consults per month',
+      '35% Maximum discount on diagnostics & tests',
+      'Dedicated 24/7 Personal Care Manager assigned',
+      '1 Free Emergency Ambulance transfer per year',
+      'Free monthly in-home blood glucose & BP monitoring visit',
     ],
   ],
 ];
 
 $steps = [
   [
-    'step' => '১',
-    'title' => 'প্ল্যান নির্বাচন করুন',
-    'desc' => 'আপনার একক বা পরিবারের চাহিদা অনুযায়ী সুবিধাজনক প্যাকেজ বেছে নিন।',
+    'step' => '1',
+    'title' => 'Select Your Plan',
+    'desc' => 'Choose the subscription package tailored to your individual or family healthcare needs.',
   ],
   [
-    'step' => '২',
-    'title' => 'সহজ অনলাইন পেমেন্ট',
-    'desc' => 'বিকাশ, নগদ, রকেট বা যেকোনো ব্যাংক কার্ড দিয়ে সুরক্ষিত পেমেন্ট সম্পন্ন করুন।',
+    'step' => '2',
+    'title' => 'Secure Digital Payment',
+    'desc' => 'Pay securely via bKash, Nagad, Rocket, or any major credit/debit bank card.',
   ],
   [
-    'step' => '৩',
-    'title' => 'মেম্বারশিপ সক্রিয়করণ',
-    'desc' => 'পেমেন্ট সম্পন্ন হওয়ার সাথে সাথেই ডিজিটাল মেম্বারশিপ কার্ড ও আইডি চালু হবে।',
+    'step' => '3',
+    'title' => 'Instant Membership Card',
+    'desc' => 'Digital membership card and member ID are activated instantly upon payment confirmation.',
   ],
   [
-    'step' => '৪',
-    'title' => 'স্বাস্থ্যসেবা উপভোগ করুন',
-    'desc' => 'ফ্রি ডাক্তারের পরামর্শ এবং পার্টনার হাসপাতালে আকর্ষণীয় ছাড় গ্রহণ করুন।',
+    'step' => '4',
+    'title' => 'Enjoy Healthcare Benefits',
+    'desc' => 'Book free doctor consultations and enjoy exclusive discounts across our partner network.',
   ],
 ];
 
 $faqs = [
   [
-    'q' => 'সাবস্ক্রিপশন প্ল্যানে কী কী সুবিধা নিশ্চিত পাওয়া যাবে?',
-    'a' => 'প্ল্যান অনুযায়ী নির্দিষ্ট সংখ্যক ফ্রি বিশেষজ্ঞ ডাক্তার কনসালটেশন, ডায়াগনস্টিক ও ল্যাব টেস্টে সর্বোচ্চ ৩৫% পর্যন্ত ছাড়, ফ্রি হোম স্যাম্পল কালেকশন এবং ২৪/৭ অনলাইন স্বাস্থ্য পরামর্শ পাওয়া যাবে।',
+    'q' => 'What benefits are guaranteed with an Easy Healthcare subscription plan?',
+    'a' => 'Depending on your selected plan, you receive free monthly specialist doctor video consultations, up to 35% discount on diagnostic lab tests, free home sample collections, and 24/7 clinical guidance.',
   ],
   [
-    'q' => 'ফ্যামিলি প্ল্যানে কীভাবে পরিবারের সদস্যদের যুক্ত করব?',
-    'a' => 'সাবস্ক্রিপশন সম্পন্ন করার পর আপনার পেশেন্ট পোর্টালে গিয়ে "ফ্যামিলি মেম্বার" অপশন থেকে স্বামী/স্ত্রী, সন্তান বা পিতা-মাতার নাম ও বয়স দিয়ে খুব সহজেই যুক্ত করতে পারবেন।',
+    'q' => 'How do I add my family members under the Family Protect plan?',
+    'a' => 'After completing your subscription, log in to your Patient Portal, click "Family Members", and add your spouse, children, or parents with their name and age in seconds.',
   ],
   [
-    'q' => 'ডায়াগনস্টিক ও ল্যাব টেস্টের ডিসকাউন্ট কীভাবে পাব?',
-    'a' => 'আমাদের পার্টনার ডায়াগনস্টিক সেন্টারে গিয়ে আপনার ইজি হেলথকেয়ার মেম্বারশিপ আইডি অথবা নিবন্ধিত ফোন নম্বর দেখালেই স্বয়ংক্রিয়ভাবে বিলে ডিসকাউন্ট যোগ হয়ে যাবে।',
+    'q' => 'How can I redeem diagnostic discounts at partner clinics and laboratories?',
+    'a' => 'Simply present your Easy Healthcare Digital Membership ID or registered mobile number at any partner diagnostic center, and discounts will be automatically applied to your bill.',
   ],
   [
-    'q' => 'প্ল্যান কি যেকোনো সময় বাতিল বা আপগ্রেড করা সম্ভব?',
-    'a' => 'হ্যাঁ, যেকোনো সময় আপনার ড্যাশবোর্ড থেকে প্ল্যান আপগ্রেড করতে পারবেন অথবা বর্তমান মেয়াদ শেষে বাতিল করতে পারবেন। কোনো হিডেন বা অপ্রত্যাশিত চার্জ কাটা হবে না।',
+    'q' => 'Can I upgrade or cancel my subscription plan at any time?',
+    'a' => 'Yes, you can upgrade your plan anytime directly from your dashboard or cancel renewal before your billing cycle without any hidden cancellation fees.',
   ],
   [
-    'q' => 'কর্পোরেট বা প্রাতিষ্ঠানিক কর্মীদের জন্য কি আলাদা প্যাকেজ আছে?',
-    'a' => 'হ্যাঁ, বিভিন্ন অফিস ও করপোরেট প্রতিষ্ঠানের কর্মীদের জন্য আমাদের বিশেষ কাস্টমাইজড হেলথ বেনিফিট প্যাকেজ রয়েছে। সরাসরি আমাদের হটলাইনে যোগাযোগ করে বিস্তারিত জানতে পারেন।',
+    'q' => 'Do you provide customized corporate health benefit packages for companies?',
+    'a' => 'Yes, we provide tailored corporate health plans, employee telemedicine access, and on-site wellness checkup camps for corporate organizations. Contact our corporate team for details.',
   ],
 ];
 ?>
 <!doctype html>
-<html lang="bn">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0D9488">
-  <title>সাবস্ক্রিপশন প্ল্যান — ইজি হেলথকেয়ার</title>
+  <title>Subscription Plans — Easy Healthcare</title>
   <link rel="icon" type="image/png" href="<?= $baseUrl ?>/assets/images/fevicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -130,23 +130,23 @@ $faqs = [
       <div class="doctor-hero-inner">
         <div class="doctor-hero-badge">
           <i data-lucide="badge-percent" aria-hidden="true"></i>
-          <span>সাশ্রয়ী পারিবারিক স্বাস্থ্য সুরক্ষা প্ল্যান</span>
+          <span>Affordable Family Healthcare Protection</span>
         </div>
         <h1 class="doctor-hero-title" id="sub-hero-title">
-          আপনার ও পরিবারের জন্য <span>স্মার্ট হেলথ সাবস্ক্রিপশন</span>
+          Smart Health Subscriptions <span>For You & Your Family</span>
         </h1>
         <p class="doctor-hero-desc">
-          ফ্রি বিশেষজ্ঞ ডাক্তারের পরামর্শ, ডায়াগনস্টিক টেস্টে বিশেষ ছাড় ও জরুরি অ্যাম্বুলেন্স সুবিধা—সবকিছু এক সাবস্ক্রিপশনে।
+          Free specialist consultations, exclusive diagnostic discounts, and emergency ambulance coverage—all in one subscription.
         </p>
 
         <div class="ambulance-hero-actions">
           <a class="hero-search-btn" href="#plans-section" style="padding: 11px 24px; font-size: 15px;">
-            <span>প্ল্যানগুলো দেখুন</span>
+            <span>Explore Plans</span>
             <i data-lucide="arrow-down" aria-hidden="true"></i>
           </a>
           <a class="ambulance-hero-btn" href="tel:09610001234">
             <i data-lucide="phone-call" aria-hidden="true"></i>
-            <span>পরামর্শে কল দিন: ০৯৬১০০০১২৩৪</span>
+            <span>Speak with an Advisor: 09610001234</span>
           </a>
         </div>
       </div>
@@ -159,9 +159,9 @@ $faqs = [
         <!-- 1. Pricing Plans Grid (3 Cards, 5px radius, Header Gradient) -->
         <div class="doctor-block">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">পছন্দের প্যাকেজ বেছে নিন</p>
-            <h2 class="doctor-block-heading">আমাদের মাসিক স্বাস্থ্য সাবস্ক্রিপশন প্যাকেজসমূহ</h2>
-            <p class="doctor-block-sub">স্বচ্ছ মূল্য তালিকা, কোনো গোপন চার্জ নেই—আপনার প্রয়োজন অনুযায়ী সেরা প্ল্যানটি বেছে নিন</p>
+            <p class="doctor-block-eyebrow">Choose Your Plan</p>
+            <h2 class="doctor-block-heading">Monthly Healthcare Subscription Plans</h2>
+            <p class="doctor-block-sub">Transparent pricing with zero hidden charges—select the plan tailored to your health needs</p>
           </div>
 
           <div class="pricing-grid">
@@ -201,9 +201,9 @@ $faqs = [
         <!-- 2. Subscription Process (Timeline Style) -->
         <div class="doctor-block">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">খুবই সহজ ও দ্রুত</p>
-            <h2 class="doctor-block-heading">কীভাবে সাবস্ক্রিপশন শুরু করবেন</h2>
-            <p class="doctor-block-sub">মাত্র ৪টি পদক্ষেপে আপনার পরিবারের ডিজিটাল স্বাস্থ্য কার্ড সক্রিয় করুন</p>
+            <p class="doctor-block-eyebrow">Simple & Seamless</p>
+            <h2 class="doctor-block-heading">How to Get Started</h2>
+            <p class="doctor-block-sub">Just 4 quick steps to activate your family's digital health membership card</p>
           </div>
 
           <div class="booking-timeline">
@@ -223,12 +223,12 @@ $faqs = [
         <div class="doctor-block">
           <div class="corporate-banner">
             <div class="corporate-banner-text">
-              <h3>করপোরেট প্রতিষ্ঠানের জন্য কাস্টমাইজড প্ল্যান চান?</h3>
-              <p>আপনার প্রতিষ্ঠানের কর্মীদের সুস্বাস্থ্য নিশ্চিতে বিশেষ করপোরেট ডিসকাউন্ট, হেলথ ক্যাম্প ও প্রিমিয়াম টেলিমেডিসিন প্যাকেজের ব্যবস্থা রয়েছে।</p>
+              <h3>Looking for Customized Corporate Health Benefits?</h3>
+              <p>Support your team with tailored corporate health coverage, executive health checkup camps, and 24/7 dedicated employee telemedicine access.</p>
             </div>
             <a href="tel:09610001234" class="corporate-banner-btn">
               <i data-lucide="building" aria-hidden="true"></i>
-              <span>করপোরেট টিমের সাথে কথা বলুন</span>
+              <span>Speak with Corporate Team</span>
               <i data-lucide="arrow-right" aria-hidden="true"></i>
             </a>
           </div>
@@ -237,9 +237,9 @@ $faqs = [
         <!-- 4. FAQ Section (Light Gray Border, Clean White Background) -->
         <div class="doctor-block">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">সাধারণ জিজ্ঞাসা</p>
-            <h2 class="doctor-block-heading">সাবস্ক্রিপশন সম্পর্কিত সচরাচর প্রশ্নাবলী (FAQ)</h2>
-            <p class="doctor-block-sub">সাবস্ক্রিপশন পলিসি ও সুবিধা নিয়ে আপনার মনের প্রশ্নের উত্তর জেনে নিন</p>
+            <p class="doctor-block-eyebrow">Common Inquiries</p>
+            <h2 class="doctor-block-heading">Frequently Asked Questions (FAQ)</h2>
+            <p class="doctor-block-sub">Everything you need to know about subscription terms, coverage, and benefits</p>
           </div>
 
           <div class="faq-list">

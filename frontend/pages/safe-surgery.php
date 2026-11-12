@@ -5,105 +5,105 @@ if (!isset($baseUrl)) {
 
 $surgeries = [
   [
-    'title' => 'ল্যাপারোস্কপিক সার্জারি',
+    'title' => 'Laparoscopic Surgery',
     'image' => $baseUrl . '/assets/images/surgery/laparoscopic.jpg',
   ],
   [
-    'title' => 'অর্থোপেডিক ও জয়েন্ট রিপ্লেসমেন্ট',
+    'title' => 'Orthopedic & Joint Replacement',
     'image' => $baseUrl . '/assets/images/surgery/orthopedic-surgery.jpg',
   ],
   [
-    'title' => 'গাইনি ও প্রসূতি সার্জারি',
+    'title' => 'Gynecology & Obstetrics Surgery',
     'image' => $baseUrl . '/assets/images/surgery/gynecology-surgery.jpg',
   ],
   [
-    'title' => 'জেনারেল সার্জারি (হার্নিয়া, গলব্লাডার)',
+    'title' => 'General Surgery (Hernia, Gallbladder)',
     'image' => $baseUrl . '/assets/images/surgery/general-surgery.jpg',
   ],
   [
-    'title' => 'ইউরোলজি ও কিডনি স্টোন সার্জারি',
+    'title' => 'Urology & Kidney Stone Surgery',
     'image' => $baseUrl . '/assets/images/surgery/urology.jpg',
   ],
   [
-    'title' => 'ইএনটি ও চক্ষু মাইক্রোসার্জারি',
+    'title' => 'ENT & Eye Microsurgery',
     'image' => $baseUrl . '/assets/images/surgery/ent-surgery.jpg',
   ],
 ];
 
 $surgerySteps = [
   [
-    'step' => '১',
-    'title' => 'সার্জন পরামর্শ ও রিপোর্ট যাচাই',
-    'desc' => 'অভিজ্ঞ সার্জনের সাথে প্রাথমিক কনসাল্টেশন এবং আপনার পূর্ববর্তী স্বাস্থ্য রিপোর্ট নিখুঁত পর্যালোচনা।',
+    'step' => '1',
+    'title' => 'Consultation & Report Review',
+    'desc' => 'Clinical consultation with a senior surgeon and comprehensive review of previous investigation reports.',
   ],
   [
-    'step' => '২',
-    'title' => 'প্রি-অপারেটিভ প্রস্তুতি',
-    'desc' => 'অপারেশনের আগে প্রয়োজনীয় ফিটনেস টেস্ট, অ্যানেস্থেসিয়া মূল্যায়ন এবং তারিখ নির্ধারণ।',
+    'step' => '2',
+    'title' => 'Pre-Operative Preparation',
+    'desc' => 'Pre-anesthesia checkup (PAC), diagnostic fitness evaluations, and transparent procedure scheduling.',
   ],
   [
-    'step' => '৩',
-    'title' => 'আধুনিক ওটিতে নিরাপদ সার্জারি',
-    'desc' => 'আন্তর্জাতিক মানের সংক্রমণমুক্ত মডুলার ওটিতে দক্ষ সার্জিক্যাল টিমের মাধ্যমে সফল অপারেশন।',
+    'step' => '3',
+    'title' => 'Safe Surgery in Modular OT',
+    'desc' => 'Successful procedure performed in sterile modular operating theaters by certified surgical teams.',
   ],
   [
-    'step' => '৪',
-    'title' => 'পোস্ট-অপারেটিভ কেয়ার ও ফলো-আপ',
-    'desc' => 'হাসপাতালে সার্বক্ষণিক নার্সিং যত্ন এবং বাড়ি ফেরার পরও নিয়মিত ডাক্তারের ফলো-আপ পরামর্শ।',
+    'step' => '4',
+    'title' => 'Post-Operative Care & Follow-Up',
+    'desc' => 'Attentive in-hospital nursing care followed by structured doctor follow-ups after returning home.',
   ],
 ];
 
 $safetyStandards = [
   [
     'icon' => 'shield-check',
-    'badge' => 'সংক্রমণমুক্ত পরিবেশ',
-    'title' => 'আন্তর্জাতিক মানের মডুলার ওটি',
-    'desc' => 'হেপা ফিল্টার ও আল্ট্রা-ক্লিন লেমিনার এয়ার ফ্লো যুক্ত ওটি, যা শতভাগ জীবাণুমুক্ত সার্জিক্যাল পরিবেশ নিশ্চিত করে।',
+    'badge' => 'Sterile Environment',
+    'title' => 'Modular Operating Theaters',
+    'desc' => 'Ultra-clean laminar airflow and HEPA filtration ensuring a 100% infection-free surgical environment.',
   ],
   [
     'icon' => 'award',
-    'badge' => 'যাচাইকৃত বিশেষজ্ঞ',
-    'title' => 'অভিজ্ঞ সার্জন ও অ্যানেস্থেটিস্ট টিম',
-    'desc' => 'বিএমডিসি নিবন্ধিত ন্যূনতম ১০+ বছরের অভিজ্ঞতা সম্পন্ন সার্জন ও স্পেশালিস্ট ক্রিটিক্যাল কেয়ার টিমের তত্ত্বাবধান।',
+    'badge' => 'Verified Specialists',
+    'title' => 'Senior Surgeons & Anesthetists',
+    'desc' => 'Supervised by BMDC-registered surgeons with 10+ years of clinical expertise and dedicated critical care units.',
   ],
   [
     'icon' => 'receipt',
-    'badge' => 'স্বচ্ছ খরচ নীতি',
-    'title' => 'ফিক্সড অল-ইনক্লুসিভ প্যাকেজ',
-    'desc' => 'সার্জারি শুরুর আগেই ওষুধের খরচ, বেড চার্জ ও ডাক্তারের ফি মিলিয়ে স্বচ্ছ ও নির্ধারিত বাজেট—কোনো বাড়তি হিডেন চার্জ নেই।',
+    'badge' => 'Transparent Pricing',
+    'title' => 'Fixed All-Inclusive Packages',
+    'desc' => 'Upfront transparent pricing covering medicine, bed charges, and surgeon fees with zero hidden charges.',
   ],
 ];
 
 $faqs = [
   [
-    'q' => 'সেফ সার্জারিতে ল্যাপারোস্কপিক পদ্ধতির বিশেষ সুবিধা কী?',
-    'a' => 'ল্যাপারোস্কপিক সার্জারিতে বড় কোনো কাটাছেঁড়া করতে হয় না, মাত্র ছোট্ট কয়েকটি ছিদ্রের মাধ্যমে ক্যামেরা ও মাইক্রো যন্ত্র দিয়ে অপারেশন করা হয়। এর ফলে ব্যথা অনেক কম হয়, রক্তক্ষরণ কম থাকে এবং রোগী ১-২ দিনের মধ্যেই স্বাভাবিক জীবনে ফিরে যেতে পারেন।',
+    'q' => 'What are the main advantages of laparoscopic minimally invasive surgery?',
+    'a' => 'Laparoscopic surgery involves small keyhole incisions guided by micro-cameras rather than large cuts. Patients experience significantly less pain, minimal blood loss, minimal scarring, and quick recovery within 24 to 48 hours.',
   ],
   [
-    'q' => 'সার্জারির খরচ বা ফিক্সড প্যাকেজ কীভাবে নির্ধারণ করা হয়?',
-    'a' => 'রোগীর রোগ নির্ণয়, অপারেশনের ধরন (ল্যাপারোস্কপিক বা ওপেন), ক্যাবিন বা বেডের ক্যাটাগরি এবং ডাক্তারের পরামর্শ অনুযায়ী অপারেশনের পূর্বেই একটি নির্দিষ্ট ফিক্সড প্যাকেজ নির্ধারণ করা হয়। ফলে বাজেট নিয়ে কোনো অনিশ্চয়তা থাকে না।',
+    'q' => 'How are fixed surgery package costs determined?',
+    'a' => 'Fixed package estimates are calculated based on surgical diagnosis, procedure approach (laparoscopic vs. open), cabin category, and doctor consultation before hospital admission, providing complete budget certainty.',
   ],
   [
-    'q' => 'অপারেশনের আগে কি সিনিয়র ডাক্তারের সেকেন্ড ওপিনিয়ন নেওয়া যাবে?',
-    'a' => 'হ্যাঁ, অবশ্যই! সার্জারির সিদ্ধান্ত নেওয়ার পূর্বে আমাদের সিনিয়র বিশেষজ্ঞ সার্জন প্যানেল থেকে আপনার রিপোর্ট দেখিয়ে সম্পূর্ণ নিরপেক্ষ দ্বিতীয় মতামত (Second Opinion) নেওয়ার সুবিধা রয়েছে।',
+    'q' => 'Can I get a second medical opinion from a senior specialist before surgery?',
+    'a' => 'Yes, absolutely. Our senior consultant panel provides impartial, comprehensive second opinions on your diagnostic scans and clinical reports to help you make informed decisions.',
   ],
   [
-    'q' => 'অপারেশনের পর রোগী কতদিন পর স্বাভাবিক কাজে ফিরতে পারেন?',
-    'a' => 'ল্যাপারোস্কপিক ও ডে-কেয়ার সার্জারির ক্ষেত্রে সাধারণত ২৪ থেকে ৪৮ ঘণ্টার মধ্যে রোগী বাড়ি ফিরতে পারেন এবং ৫-৭ দিনের মধ্যে স্বাভাবিক দৈনন্দিন কাজ শুরু করতে পারেন। বড় অপারেশনের ক্ষেত্রে সার্জন প্রয়োজনীয় সময় নির্ধারণ করে দেন।',
+    'q' => 'How quickly can a patient return to normal activities after surgery?',
+    'a' => 'For laparoscopic and day-care surgeries, patients typically return home within 24 to 48 hours and resume regular light daily routines in 5 to 7 days. Your lead surgeon will outline an individualized recovery timeline.',
   ],
   [
-    'q' => 'স্বাস্থ্য বীমা বা কিস্তিতে সার্জারির ফি পরিশোধের সুবিধা আছে কি?',
-    'a' => 'হ্যাঁ, আমাদের পার্টনার হাসপাতালগুলোতে শীর্ষস্থানীয় হেলথ ইন্স্যুরেন্স কোম্পানির ক্যাশলেস ফ্যাসিলিটি রয়েছে এবং নির্দিষ্ট ক্রেডিট কার্ডে ০% সুদে ৩ থেকে ১২ মাসের সহজ ইএমআই (EMI) সুবিধা পাওয়া যায়।',
+    'q' => 'Are health insurance cashless facilities or EMI options supported?',
+    'a' => 'Yes, partner hospitals provide cashless admission facilities for major health insurance providers, and 0% interest EMI payment plans from 3 to 12 months are available on selected bank credit cards.',
   ],
 ];
 ?>
 <!doctype html>
-<html lang="bn">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0D9488">
-  <title>সেফ সার্জারি — ইজি হেলথকেয়ার</title>
+  <title>Safe Surgery — Easy Healthcare</title>
   <link rel="icon" type="image/png" href="<?= $baseUrl ?>/assets/images/fevicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -122,23 +122,23 @@ $faqs = [
       <div class="doctor-hero-inner">
         <div class="doctor-hero-badge">
           <i data-lucide="shield-plus" aria-hidden="true"></i>
-          <span>নিরাপদ, আধুনিক ও সাশ্রয়ী সার্জিক্যাল কেয়ার</span>
+          <span>Safe, Advanced & Affordable Surgical Care</span>
         </div>
         <h1 class="doctor-hero-title" id="surgery-hero-title">
-          অভিজ্ঞ সার্জনের তত্ত্বাবধানে <span>নিরাপদ সার্জারি সেবা</span>
+          Precision Surgery <span>Under Senior Specialist Surgeons</span>
         </h1>
         <p class="doctor-hero-desc">
-          আন্তর্জাতিক মানের মডুলার ওটি, উন্নত ল্যাপারোস্কপিক প্রযুক্তি এবং ফিক্সড বাজেটে বিশেষজ্ঞ সার্জিক্যাল কেয়ার।
+          Modular operating theaters, modern laparoscopic technology, and fixed transparent packages for complete peace of mind.
         </p>
 
         <div class="ambulance-hero-actions">
           <a class="hero-search-btn" href="#surgery-form" style="padding: 11px 24px; font-size: 15px;">
-            <span>ফ্রি সার্জারি পরামর্শ নিন</span>
+            <span>Free Surgery Consultation</span>
             <i data-lucide="arrow-down" aria-hidden="true"></i>
           </a>
           <a class="ambulance-hero-btn" href="tel:09610001234">
             <i data-lucide="phone-call" aria-hidden="true"></i>
-            <span>হটলাইনে কল দিন: ০৯৬১০০০১২৩৪</span>
+            <span>Call Hotline: 09610001234</span>
           </a>
         </div>
       </div>
@@ -151,21 +151,21 @@ $faqs = [
         <!-- 1. Surgery Categories Grid (6 Cards, 3 per row) -->
         <div class="doctor-block">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">বিশেষায়িত সার্জিক্যাল কেয়ার</p>
-            <h2 class="doctor-block-heading">জনপ্রিয় সার্জারি ক্যাটাগরি</h2>
-            <p class="doctor-block-sub">আপনার প্রয়োজনীয় চিকিৎসা অনুযায়ী বিশেষজ্ঞ সার্জনের পরামর্শ গ্রহণ করুন</p>
+            <p class="doctor-block-eyebrow">Specialized Surgical Care</p>
+            <h2 class="doctor-block-heading">Popular Surgery Categories</h2>
+            <p class="doctor-block-sub">Consult top surgeons tailored to your specific clinical requirements</p>
           </div>
 
           <div class="doctor-grid">
             <?php foreach ($surgeries as $item): ?>
-              <article class="doctor-card">
+              <article class="doctor-card surgery-card">
                 <div class="doctor-card-media">
                   <img src="<?= htmlspecialchars($item['image'], ENT_QUOTES, 'UTF-8') ?>" alt="<?= htmlspecialchars($item['title'], ENT_QUOTES, 'UTF-8') ?>" loading="lazy">
                 </div>
                 <div class="doctor-card-body">
                   <h3 class="doctor-card-title"><?= htmlspecialchars($item['title'], ENT_QUOTES, 'UTF-8') ?></h3>
                   <a href="#surgery-form" class="doctor-card-btn">
-                    <span>পরামর্শ নিন</span>
+                    <span>Consult Now</span>
                     <i data-lucide="arrow-right" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -177,9 +177,9 @@ $faqs = [
         <!-- 2. Safe Surgery Process (Timeline Style) -->
         <div class="doctor-block">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">ধাপে ধাপে সেবা</p>
-            <h2 class="doctor-block-heading">সেফ সার্জারি প্রসেস</h2>
-            <p class="doctor-block-sub">রোগীর সুরক্ষা ও সর্বোচ্চ স্বস্তি নিশ্চিতে ৪টি সুনির্দিষ্ট ধাপ</p>
+            <p class="doctor-block-eyebrow">Step-by-Step Pathway</p>
+            <h2 class="doctor-block-heading">Safe Surgery Process</h2>
+            <p class="doctor-block-sub">4 structured steps ensuring maximum safety, comfort, and clinical excellence</p>
           </div>
 
           <div class="booking-timeline">
@@ -195,12 +195,12 @@ $faqs = [
           </div>
         </div>
 
-        <!-- 3. Safety Standards (নিরাপত্তা স্তম্ভসমূহ) -->
+        <!-- 3. Safety Standards -->
         <div class="doctor-block">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">কেন আমাদের ওপর ভরসা রাখবেন</p>
-            <h2 class="doctor-block-heading">আমাদের সেফ সার্জারি স্ট্যান্ডার্ডস</h2>
-            <p class="doctor-block-sub">রোগীর সুস্থতা ও দ্রুত আরোগ্য লাভই আমাদের প্রথম অগ্রাধিকার</p>
+            <p class="doctor-block-eyebrow">Why Trust Us</p>
+            <h2 class="doctor-block-heading">Our Safe Surgery Standards</h2>
+            <p class="doctor-block-sub">Patient safety, precision treatment, and speedy recovery are our foundational priorities</p>
           </div>
 
           <div class="coverage-grid">
@@ -220,59 +220,59 @@ $faqs = [
         <!-- 4. Surgery Consultation & Quote Form -->
         <div class="doctor-block" id="surgery-form">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">বিশেষজ্ঞ মতামত ও খরচ</p>
-            <h2 class="doctor-block-heading">ফ্রি সার্জারি পরামর্শ ও খরচ যাচাই</h2>
-            <p class="doctor-block-sub">আপনার তথ্য দিন, আমাদের সিনিয়র সার্জিক্যাল কেয়ার এক্সিকিউটিভ দ্রুত যোগাযোগ করবেন</p>
+            <p class="doctor-block-eyebrow">Expert Advice & Estimates</p>
+            <h2 class="doctor-block-heading">Free Surgery Consultation & Quote</h2>
+            <p class="doctor-block-sub">Submit your details and our senior surgical care coordinator will contact you promptly</p>
           </div>
 
           <div class="booking-form-wrap">
             <div class="booking-form-left">
-              <h3>পরামর্শ ফর্ম পূরণ করুন</h3>
-              <p>আপনার রোগের তথ্য ও রিপোর্ট শেয়ার করে নিখরচায় ডাক্তারের প্রাথমিক পরামর্শ নিন।</p>
+              <h3>Fill Consultation Form</h3>
+              <p>Share your symptoms or diagnostic reports for complimentary initial doctor advice.</p>
 
-              <form class="ambulance-form" onsubmit="event.preventDefault(); alert('আপনার সার্জারি পরামর্শ রিকোয়েস্ট গ্রহণ করা হয়েছে। আমাদের কেয়ার ম্যানেজার খুব দ্রুত আপনার নম্বরে যোগাযোগ করবেন।');">
+              <form class="ambulance-form" onsubmit="event.preventDefault(); alert('Your surgery consultation request has been received. Our clinical care manager will call you shortly.');">
                 <div class="form-group">
-                  <label for="patient-name">রোগীর পুরো নাম*</label>
-                  <input type="text" id="patient-name" name="name" placeholder="নাম লিখুন" required>
+                  <label for="patient-name">Patient's Full Name*</label>
+                  <input type="text" id="patient-name" name="name" placeholder="Enter patient's name" required>
                 </div>
 
                 <div class="form-group">
-                  <label for="patient-phone">মোবাইল নম্বর*</label>
-                  <input type="tel" id="patient-phone" name="phone" placeholder="০১৭xxxxxxxx" required>
+                  <label for="patient-phone">Mobile Number*</label>
+                  <input type="tel" id="patient-phone" name="phone" placeholder="017xxxxxxxx" required>
                 </div>
 
                 <div class="form-group">
-                  <label for="surgery-type">সার্জারির ধরন*</label>
+                  <label for="surgery-type">Surgery Category*</label>
                   <select id="surgery-type" name="surgery" required>
-                    <option value="">নির্বাচন করুন</option>
-                    <option value="laparoscopic">ল্যাপারোস্কপিক (গলব্লাডার / অ্যাপেন্ডিক্স)</option>
-                    <option value="orthopedic">অর্থোপেডিক ও হাড়ভাঙা / জয়েন্ট</option>
-                    <option value="gynecology">গাইনি ও প্রসূতি / সিজারিয়ান</option>
-                    <option value="hernia">হার্নিয়া ও পাইলস / ফিস্টুলা</option>
-                    <option value="urology">ইউরোলজি ও কিডনি স্টোন</option>
-                    <option value="ent">ইএনটি / টনসিল / চোখ</option>
-                    <option value="other">অন্যান্য সার্জারি</option>
+                    <option value="">Select Surgery Category</option>
+                    <option value="laparoscopic">Laparoscopic (Gallbladder / Appendix)</option>
+                    <option value="orthopedic">Orthopedics & Fractures / Joint</option>
+                    <option value="gynecology">Gynecology & Obstetrics / C-Section</option>
+                    <option value="hernia">Hernia & Piles / Fistula</option>
+                    <option value="urology">Urology & Kidney Stones</option>
+                    <option value="ent">ENT / Tonsil / Eye Microsurgery</option>
+                    <option value="other">Other Surgeries</option>
                   </select>
                 </div>
 
                 <div class="form-group">
-                  <label for="has-report">ডায়াগনস্টিক রিপোর্ট আছে কি?</label>
+                  <label for="has-report">Do you have diagnostic reports?</label>
                   <select id="has-report" name="report">
-                    <option value="yes">হ্যাঁ, সাম্প্রতিক রিপোর্ট আছে</option>
-                    <option value="no">না, এখনো কোনো টেস্ট করা হয়নি</option>
-                    <option value="consult">শুধু প্রাথমিক পরামর্শ চাই</option>
+                    <option value="yes">Yes, I have recent diagnostic reports</option>
+                    <option value="no">No, tests not done yet</option>
+                    <option value="consult">Need initial consultation only</option>
                   </select>
                 </div>
 
                 <div class="form-group form-full">
-                  <label for="symptoms">রোগীর বর্তমান উপসর্গ বা সমস্যা</label>
-                  <textarea id="symptoms" name="symptoms" rows="3" placeholder="রোগীর উপসর্গ বা কোনো জিজ্ঞাসা থাকলে সংক্ষেপে লিখুন..."></textarea>
+                  <label for="symptoms">Current Symptoms or Questions</label>
+                  <textarea id="symptoms" name="symptoms" rows="3" placeholder="Briefly describe patient symptoms, doctor advice or any queries..."></textarea>
                 </div>
 
                 <div class="form-group form-full">
                   <button type="submit" class="surgery-submit-btn">
                     <i data-lucide="send" aria-hidden="true"></i>
-                    <span>ফ্রি সার্জারি পরামর্শ রিকোয়েস্ট পাঠান</span>
+                    <span>Send Free Consultation Request</span>
                   </button>
                 </div>
               </form>
@@ -284,21 +284,21 @@ $faqs = [
                 <div class="siren-icon" style="background: #f3e8ff; color: var(--health-primary);">
                   <i data-lucide="stethoscope" aria-hidden="true"></i>
                 </div>
-                <h4>জরুরি সার্জারি হেল্পলাইন</h4>
-                <p>খরচ, সার্জন শিডিউল বা দ্রুত ভর্তির প্রয়োজনে সরাসরি আমাদের সার্জিক্যাল ম্যানেজারের সাথে কথা বলুন।</p>
+                <h4>Surgical Care Helpline</h4>
+                <p>Speak directly with our surgical care team for doctor scheduling, hospital admission, and pricing details.</p>
                 <a class="quick-call-number" href="tel:09610001234" style="color: var(--health-primary); background: #fbf9ff; border-color: #d8cde9;">
-                  ০৯৬১০০০১২৩৪
+                  09610001234
                 </a>
-                <p class="text-xs text-gray-500 m-0">সকাল ৮টা থেকে রাত ১১টা</p>
+                <p class="text-xs text-gray-500 m-0">Available 8:00 AM to 11:00 PM</p>
               </div>
 
               <div class="sidebar-features">
-                <h4>ইজি সেফ সার্জারির বিশেষত্ব</h4>
+                <h4>Easy Safe Surgery Highlights</h4>
                 <ul class="sidebar-feature-list">
-                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> সেকেন্ড ওপিনিয়ন সুবিধা</li>
-                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> ফিক্সড প্যাকেজ গ্যারান্টি</li>
-                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> ০% সুদে সহজ ইএমআই সুবিধা</li>
-                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> পোস্ট-অপারেটিভ ফলো-আপ ফ্রি</li>
+                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Free Second Opinion Facility</li>
+                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Transparent Fixed Package Guarantee</li>
+                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> 0% Interest Easy EMI Facility</li>
+                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Complimentary Post-Op Follow-up</li>
                 </ul>
               </div>
             </div>
@@ -308,9 +308,9 @@ $faqs = [
         <!-- 5. FAQ Section (Light Gray Border, Clean White Background) -->
         <div class="doctor-block">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">সাধারণ জিজ্ঞাসা</p>
-            <h2 class="doctor-block-heading">সার্জারি সম্পর্কিত সচরাচর প্রশ্নাবলী (FAQ)</h2>
-            <p class="doctor-block-sub">অপারেশন প্রস্তুতি, খরচ ও রিকভারি নিয়ে আপনার মনের সাধারণ জিজ্ঞাসা</p>
+            <p class="doctor-block-eyebrow">Common Questions</p>
+            <h2 class="doctor-block-heading">Frequently Asked Questions (FAQ)</h2>
+            <p class="doctor-block-sub">Everything you need to know about surgery preparation, packages, and recovery</p>
           </div>
 
           <div class="faq-list">

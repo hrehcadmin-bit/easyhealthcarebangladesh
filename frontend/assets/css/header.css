@@ -1630,7 +1630,7 @@ a {
 }
 
 .doctor-content-container {
-  max-width: 960px;
+  max-width: 1060px;
   margin: 0 auto;
 }
 
@@ -1925,5 +1925,629 @@ a {
     margin: 0;
     flex-shrink: 0;
     box-shadow: 0 0 0 4px #ffffff;
+  }
+}
+
+/* ==========================================================================
+   Shared Hero Buttons & Actions (Ambulance, Surgery, Special Care, Subscription)
+   ========================================================================== */
+.ambulance-hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.ambulance-hero-hotline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #dc2626;
+  color: #ffffff;
+  padding: 11px 24px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.35);
+  transition: all .18s ease;
+}
+
+.ambulance-hero-hotline:hover {
+  background: #b91c1c;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.ambulance-hero-hotline svg {
+  width: 17px;
+  height: 17px;
+}
+
+.ambulance-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 11px 24px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  backdrop-filter: blur(8px);
+  transition: all .18s ease;
+}
+
+.ambulance-hero-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.ambulance-hero-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ==========================================================================
+   Special Care Zone Grid (16 Cards Layout)
+   ========================================================================== */
+.ambulance-card .doctor-card-media,
+.surgery-card .doctor-card-media {
+  height: 215px;
+}
+
+.special-care-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.special-care-card .doctor-card-media {
+  height: 185px;
+}
+
+.special-care-card .doctor-card-body {
+  padding: 14px 16px 18px;
+  gap: 10px;
+}
+
+.special-care-card .doctor-card-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   Coverage & Safety Standards Grid
+   ========================================================================== */
+.coverage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.coverage-card {
+  background: #ffffff;
+  border: 1px solid #ebe5f2;
+  border-radius: 5px;
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: border-color .18s ease;
+}
+
+.coverage-card:hover {
+  border-color: #c9c2d7;
+}
+
+.coverage-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: #f0fdfa;
+  color: var(--health-primary);
+  display: grid;
+  place-items: center;
+  margin-bottom: 14px;
+}
+
+.coverage-card-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.coverage-badge,
+.surgery-badge {
+  display: inline-block;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 4px;
+  background: #e6fffa;
+  color: var(--health-primary-dark);
+  margin-bottom: 10px;
+  letter-spacing: 0.3px;
+}
+
+.coverage-card h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--health-primary);
+  line-height: 1.35;
+}
+
+.coverage-card p {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--health-muted);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   Booking & Consultation Form Layout + Quick Hotline Sidebar
+   ========================================================================== */
+.booking-form-wrap {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 28px;
+  background: #fcfbfe;
+  border: 1px solid #ebe5f2;
+  border-radius: 5px;
+  padding: 32px 28px;
+}
+
+.booking-form-left h3 {
+  margin: 0 0 6px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--health-primary);
+}
+
+.booking-form-left > p {
+  margin: 0 0 20px;
+  font-size: 13.5px;
+  color: var(--health-muted);
+  line-height: 1.5;
+}
+
+.ambulance-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group.form-full {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--health-primary);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 13px;
+  background: #ffffff;
+  border: 1px solid #dcd7e5;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--health-ink);
+  outline: none;
+  transition: border-color .18s ease, box-shadow .18s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--health-primary);
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.12);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9d96ab;
+}
+
+.ambulance-submit-btn,
+.surgery-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 24px;
+  background: var(--health-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color .18s ease;
+  margin-top: 4px;
+}
+
+.ambulance-submit-btn:hover,
+.surgery-submit-btn:hover {
+  background: var(--health-primary-dark);
+}
+
+.ambulance-submit-btn svg,
+.surgery-submit-btn svg {
+  width: 17px;
+  height: 17px;
+}
+
+/* Sidebar Styling */
+.booking-form-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.quick-call-box {
+  background: #ffffff;
+  border: 1px solid #ebe5f2;
+  border-radius: 5px;
+  padding: 24px 20px;
+  text-align: center;
+}
+
+.siren-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fee2e2;
+  color: #dc2626;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 12px;
+}
+
+.siren-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.quick-call-box h4 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--health-primary);
+}
+
+.quick-call-box p {
+  margin: 0 0 14px;
+  font-size: 13px;
+  color: var(--health-muted);
+  line-height: 1.5;
+}
+
+.quick-call-number {
+  display: block;
+  padding: 10px 16px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 5px;
+  color: #dc2626;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  transition: all .18s ease;
+}
+
+.quick-call-number:hover {
+  background: #fee2e2;
+  border-color: #fca5a5;
+}
+
+.sidebar-features {
+  background: #ffffff;
+  border: 1px solid #ebe5f2;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.sidebar-features h4 {
+  margin: 0 0 12px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--health-primary);
+}
+
+.sidebar-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  color: var(--health-ink);
+}
+
+.sidebar-feature-list li svg {
+  width: 16px;
+  height: 16px;
+  color: var(--health-primary);
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Pricing Grid & Plans (Subscription Plan Page)
+   ========================================================================== */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.pricing-card {
+  position: relative;
+  background:
+    radial-gradient(ellipse at 82% 28%, rgb(13 148 136 / 9%), transparent 34%),
+    linear-gradient(115deg, #f0fdfa 0%, #ffffff 54%, #f8fafc 100%);
+  border: 1px solid #ebe5f2;
+  border-radius: 5px;
+  padding: 30px 22px;
+  display: flex;
+  flex-direction: column;
+  transition: border-color .18s ease;
+}
+
+.pricing-card-featured {
+  border: 2px solid var(--health-primary);
+  box-shadow: 0 8px 24px rgba(13, 148, 136, 0.12);
+}
+
+.pricing-featured-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: var(--health-primary);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 12px;
+  letter-spacing: 0.5px;
+}
+
+.pricing-plan-name {
+  margin: 0 0 6px;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--health-primary);
+}
+
+.pricing-plan-sub {
+  margin: 0 0 18px;
+  font-size: 13px;
+  color: var(--health-muted);
+  line-height: 1.45;
+}
+
+.pricing-price-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ebe5f2;
+}
+
+.pricing-currency {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--health-primary);
+}
+
+.pricing-amount {
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--health-primary);
+  line-height: 1;
+}
+
+.pricing-period {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--health-muted);
+  margin-left: 4px;
+}
+
+.pricing-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.pricing-feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 13.5px;
+  color: var(--health-ink);
+  line-height: 1.45;
+}
+
+.pricing-feature-list li svg {
+  width: 16px;
+  height: 16px;
+  color: var(--health-primary);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.pricing-card-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px;
+  background: var(--health-primary);
+  color: #ffffff;
+  border: 1px solid var(--health-primary);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: all .18s ease;
+}
+
+.pricing-card-btn:hover {
+  background: var(--health-primary-dark);
+  border-color: var(--health-primary-dark);
+  color: #ffffff;
+}
+
+.pricing-card-btn-outline {
+  background: transparent;
+  color: var(--health-primary);
+  border-color: var(--health-primary);
+}
+
+.pricing-card-btn-outline:hover {
+  background: rgba(13, 148, 136, 0.08);
+  color: var(--health-primary);
+}
+
+/* Corporate Banner */
+.corporate-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+  border-radius: 5px;
+  padding: 28px 32px;
+  color: #ffffff;
+}
+
+.corporate-banner-text h3 {
+  margin: 0 0 6px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.corporate-banner-text p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.92;
+  line-height: 1.5;
+}
+
+.corporate-banner-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  background: #ffffff;
+  color: #0f766e;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: transform .18s ease;
+}
+
+.corporate-banner-btn:hover {
+  transform: translateY(-2px);
+  color: #0f766e;
+}
+
+/* ==========================================================================
+   Responsive Adaptations for Grids & Forms
+   ========================================================================== */
+@media (max-width: 1080px) {
+  .special-care-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+}
+
+@media (max-width: 900px) {
+  .coverage-grid,
+  .pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+  .booking-form-wrap {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px 20px;
+  }
+  .corporate-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 680px) {
+  .special-care-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .special-care-card .doctor-card-media {
+    height: 180px;
+  }
+  .coverage-grid,
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .ambulance-form {
+    grid-template-columns: 1fr;
+  }
+  .ambulance-hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .ambulance-hero-hotline,
+  .ambulance-hero-btn {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 440px) {
+  .special-care-grid {
+    grid-template-columns: 1fr;
   }
 }

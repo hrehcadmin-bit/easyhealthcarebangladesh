@@ -1,13 +1,13 @@
 <?php
 $utilityPage = [
-  'title' => 'পেশেন্ট পোর্টাল',
-  'eyebrow' => 'আপনার স্বাস্থ্যসেবার এক জায়গা',
-  'description' => 'অ্যাপয়েন্টমেন্ট ও স্বাস্থ্যসেবার তথ্য এক জায়গা থেকে ব্যবস্থাপনার জন্য পেশেন্ট পোর্টাল।',
-  'notice' => 'পেশেন্ট পোর্টালে প্রবেশ ও অ্যাকাউন্ট তৈরির সুবিধাটি এখনো চালু হয়নি। চালু হলে এখান থেকেই নিরাপদে প্রবেশ করতে পারবেন।',
+  'title' => 'Patient Portal',
+  'eyebrow' => 'All Your Healthcare in One Unified Space',
+  'description' => 'Manage appointments, access digital prescriptions, review diagnostic reports, and consult specialists.',
+  'notice' => 'Patient self-service portal registration is launching soon. For appointment serials or assistance, please contact our support team.',
   'features' => [
-    ['icon' => 'calendar-check', 'title' => 'অ্যাপয়েন্টমেন্ট', 'description' => 'আপনার অ্যাপয়েন্টমেন্টের তথ্য এক জায়গায় দেখার সুবিধা যুক্ত হবে।'],
-    ['icon' => 'folder-heart', 'title' => 'স্বাস্থ্যতথ্য', 'description' => 'প্রয়োজনীয় স্বাস্থ্যসেবার তথ্য সহজে খুঁজে পাওয়ার ব্যবস্থা থাকবে।'],
-    ['icon' => 'user-round', 'title' => 'ব্যক্তিগত অ্যাকাউন্ট', 'description' => 'নিজের অ্যাকাউন্ট থেকে সেবাগুলো ব্যবস্থাপনার সুবিধা এখানে আসবে।'],
+    ['icon' => 'calendar-check', 'title' => 'My Appointments', 'description' => 'Real-time updates on your chamber bookings, doctor serial numbers, and teleconsultation links.'],
+    ['icon' => 'folder-heart', 'title' => 'Health Records', 'description' => 'Safely store family medical histories, immunization charts, and ongoing care plans.'],
+    ['icon' => 'user-round', 'title' => 'Personal Health Profile', 'description' => 'Personalized health insights, subscription plan management, and medicine refill reminders.'],
   ],
 ];
 require __DIR__ . '/../includes/utility-page.php';

@@ -1,6 +1,6 @@
 <?php
 $mainNavigationPage = [
-  'title' => 'অনলাইন ডায়াগনস্টিক ল্যাব',
-  'description' => 'ডায়াগনস্টিক পরীক্ষা ও ল্যাব-সংক্রান্ত অনলাইন সেবার তথ্য এখানে পাওয়া যাবে।',
+  'title' => 'Online Diagnostic Lab',
+  'description' => 'Book lab tests, arrange home sample collection, and receive verified digital diagnostic reports.',
 ];
 require __DIR__ . '/../includes/main-navigation-page.php';

@@ -1,6 +1,6 @@
 <?php
 $mainNavigationPage = [
-  'title' => 'পার্টনার প্ল্যান',
-  'description' => 'ইজি হেলথকেয়ারের সঙ্গে অংশীদারত্বের পরিকল্পনা ও সেবার তথ্য এখানে পাওয়া যাবে।',
+  'title' => 'Partner Plan',
+  'description' => 'Collaboration and strategic healthcare partnership programs for hospitals, diagnostic labs, and corporate enterprises.',
 ];
 require __DIR__ . '/../includes/main-navigation-page.php';

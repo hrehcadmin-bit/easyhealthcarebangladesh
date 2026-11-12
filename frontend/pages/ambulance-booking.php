@@ -5,109 +5,109 @@ if (!isset($baseUrl)) {
 
 $ambulanceTypes = [
   [
-    'title' => 'এসি অ্যাম্বুলেন্স',
+    'title' => 'AC Ambulance',
     'image' => $baseUrl . '/assets/images/ambulance/ac-ambulance.jpg',
   ],
   [
-    'title' => 'নন-এসি অ্যাম্বুলেন্স',
+    'title' => 'Non-AC Ambulance',
     'image' => $baseUrl . '/assets/images/ambulance/non-ac.jpg',
   ],
   [
-    'title' => 'আইসিইউ / সিসিইউ অ্যাম্বুলেন্স',
+    'title' => 'ICU / CCU Life Support',
     'image' => $baseUrl . '/assets/images/ambulance/icu-ambulance.jpg',
   ],
   [
-    'title' => 'ফ্রিজার অ্যাম্বুলেন্স (লাশবাহী)',
+    'title' => 'Freezer Mortuary Van',
     'image' => $baseUrl . '/assets/images/ambulance/freezer-ambulance.jpg',
   ],
   [
-    'title' => 'এনআইসিইউ বেবি অ্যাম্বুলেন্স',
+    'title' => 'NICU Neonatal Ambulance',
     'image' => $baseUrl . '/assets/images/ambulance/nicu-ambulance.jpg',
   ],
   [
-    'title' => 'এয়ার অ্যাম্বুলেন্স (হেলিকপ্টার)',
+    'title' => 'Air Ambulance (Helicopter)',
     'image' => $baseUrl . '/assets/images/ambulance/air-ambulance.jpg',
   ],
 ];
 
 $bookingSteps = [
   [
-    'step' => '১',
-    'title' => 'লোকেশন ও অ্যাম্বুলেন্স নির্বাচন',
-    'desc' => 'রোগীর বর্তমান অবস্থান এবং শারীরিক অবস্থা অনুযায়ী প্রয়োজনীয় অ্যাম্বুলেন্স সিলেক্ট করুন।',
+    'step' => '1',
+    'title' => 'Location & Fleet Selection',
+    'desc' => 'Select the ambulance type best suited for the patient’s condition and current location.',
   ],
   [
-    'step' => '২',
-    'title' => 'হটলাইনে কল বা অনলাইন রিকোয়েস্ট',
-    'desc' => 'আমাদের ২৪/৭ জরুরি হটলাইনে সরাসরি কল দিন অথবা নিচের ফর্মে তথ্য দিয়ে সাবমিট করুন।',
+    'step' => '2',
+    'title' => 'Call Hotline or Submit Form',
+    'desc' => 'Call our 24/7 emergency dispatch directly or submit your details in the online form below.',
   ],
   [
-    'step' => '৩',
-    'title' => 'নিকটস্থ অ্যাম্বুলেন্স মুভমেন্ট',
-    'desc' => 'আপনার ঠিকানার নিকটতম অ্যাম্বুলেন্সটি তাৎক্ষণিক রওনা দেবে এবং চালকের নম্বর পাবেন।',
+    'step' => '3',
+    'title' => 'Nearest Unit Dispatched',
+    'desc' => 'The closest emergency unit departs immediately and the driver’s contact is shared with you.',
   ],
   [
-    'step' => '৪',
-    'title' => 'হাসপাতালে নিরাপদ স্থানান্তর',
-    'desc' => 'অভিজ্ঞ প্যারামেডিক ও দ্রুততম রুটে রোগীকে কাঙ্ক্ষিত হাসপাতালে নিরাপদ পৌঁছে দেওয়া হবে।',
+    'step' => '4',
+    'title' => 'Safe Hospital Transfer',
+    'desc' => 'Certified paramedics navigate the fastest route to safely transfer the patient to destination hospital.',
   ],
 ];
 
 $coverageZones = [
   [
     'icon' => 'map-pin',
-    'badge' => '১০-২০ মিনিট রেসপন্স',
-    'title' => 'ঢাকা সিটি মেট্রো জোন',
-    'desc' => 'ধানমন্ডি, গুলশান, বনানী, উত্তরা, মিরপুর, পুরান ঢাকা, মহাখালী, শ্যামলী সহ ঢাকার প্রতিটি থানায় সার্বক্ষণিক প্রস্তুত ইউনিট।',
+    'badge' => '10-20 Min Response',
+    'title' => 'Dhaka City Metro Zone',
+    'desc' => 'Standby units covering Dhanmondi, Gulshan, Banani, Uttara, Mirpur, Old Dhaka, Mohakhali, and all surrounding areas.',
   ],
   [
     'icon' => 'building-2',
-    'badge' => 'বিভাগীয় হটলাইন',
-    'title' => 'বিভাগীয় শহরসমূহ',
-    'desc' => 'চট্টগ্রাম, রাজশাহী, খুলনা, সিলেট, বরিশাল, রংপুর এবং ময়মনসিংহে আঞ্চলিক অ্যাম্বুলেন্স নেটওয়ার্ক ও দ্রুত সেবা।',
+    'badge' => 'Divisional Hotline',
+    'title' => 'Divisional Headquarters',
+    'desc' => 'Regional rapid response network active in Chattogram, Rajshahi, Khulna, Sylhet, Barishal, Rangpur, and Mymensingh.',
   ],
   [
     'icon' => 'navigation',
-    'badge' => 'সারা বাংলাদেশ',
-    'title' => 'ইন্টার-ডিস্ট্রিক্ট দূরপাল্লার সার্ভিস',
-    'desc' => 'বাংলাদেশের যেকোনো জেলা বা উপজেলা থেকে মুমূর্ষু রোগীকে উন্নত চিকিৎসার জন্য দ্রুত ঢাকায় নিয়ে আসার বিশেষ ব্যবস্থা।',
+    'badge' => 'All Bangladesh',
+    'title' => 'Inter-District Long Transit',
+    'desc' => 'Specialized long-distance transit bringing critical patients safely to Dhaka from any district or upazila.',
   ],
 ];
 
 $faqs = [
   [
-    'q' => 'জরুরি কল করার কতক্ষণের মধ্যে অ্যাম্বুলেন্স রোগীর কাছে পৌঁছাবে?',
-    'a' => 'ঢাকা মেট্রোপলিটন এলাকার যেকোনো স্থানে সাধারণত ১০ থেকে ২০ মিনিটের মধ্যে আমাদের নিকটস্থ অ্যাম্বুলেন্স পৌঁছে যায়। ঢাকার বাইরে দূরত্বের ওপর নির্ভর করে দ্রুততম সময়ে অ্যাম্বুলেন্স নিশ্চিত করা হয়।',
+    'q' => 'How quickly will the ambulance arrive after placing an emergency request?',
+    'a' => 'Within the Dhaka Metropolitan area, our nearest standby ambulance typically reaches you within 10 to 20 minutes. For long-distance inter-district transfers, dispatch is coordinated and confirmed immediately.',
   ],
   [
-    'q' => 'আইসিইউ অ্যাম্বুলেন্সে কি ডাক্তার বা প্যারামেডিক উপস্থিত থাকেন?',
-    'a' => 'হ্যাঁ, আমাদের প্রতিটি আইসিইউ ও সিসিইউ লাইফ সাপোর্ট অ্যাম্বুলেন্সে প্রশিক্ষিত জরুরি প্যারামেডিক উপস্থিত থাকেন এবং পরিবারের চাহিদামতো চিকিৎসক সাপোর্ট নিশ্চিত করার সুযোগ রয়েছে।',
+    'q' => 'Does the ICU ambulance include a paramedic or doctor?',
+    'a' => 'Yes, every ICU and CCU life support ambulance is accompanied by a certified emergency paramedic. A registered emergency physician can also be assigned upon request.',
   ],
   [
-    'q' => 'অ্যাম্বুলেন্সের ভাড়া বা চার্জ কীভাবে নির্ধারিত হয়?',
-    'a' => 'ভাড়া সম্পূর্ণ নির্ভর করে অ্যাম্বুলেন্সের ধরন (এসি, নন-এসি, আইসিইউ বা ফ্রিজার) এবং দূরত্বের ওপর। আমাদের কোনো গোপন চার্জ নেই এবং সরকার নির্ধারিত ও ন্যায্য মূল্যে সেবা প্রদান করা হয়।',
+    'q' => 'How are ambulance fares calculated?',
+    'a' => 'Fares are completely transparent based on the ambulance category (AC, Non-AC, ICU, or Freezer) and travel distance. We operate with zero hidden charges and government-standard fair pricing.',
   ],
   [
-    'q' => 'ঢাকার বাইরে বা দূরবর্তী জেলায় রোগী স্থানান্তর করা সম্ভব কি?',
-    'a' => 'হ্যাঁ, সারা বাংলাদেশের যেকোনো প্রান্ত থেকে ঢাকায় উন্নত চিকিৎসার জন্য রোগী আনা কিংবা ঢাকা থেকে দেশের যেকোনো প্রান্তে রোগী স্থানান্তরের জন্য আমাদের লং-ডিসট্যান্স অ্যাম্বুলেন্স প্রস্তুত রয়েছে।',
+    'q' => 'Can patients be safely transferred to Dhaka from distant districts?',
+    'a' => 'Yes, our long-distance inter-district fleet is equipped with continuous central oxygen, cardiac monitors, and shock-absorbing suspension to ensure patient stability during inter-city transit.',
   ],
   [
-    'q' => 'ফ্রিজার অ্যাম্বুলেন্সে মরদেহ কত সময় পর্যন্ত সংরক্ষণ করা যায়?',
-    'a' => 'আমাদের আধুনিক ফ্রিজার অ্যাম্বুলেন্সগুলোতে মাইনাস তাপমাত্রায় দীর্ঘক্ষণ মরদেহ অক্ষত রাখার ব্যবস্থা রয়েছে, যা দেশের যেকোনো জেলায় মরদেহ পরিবহনের জন্য সম্পূর্ণ নিরাপদ।',
+    'q' => 'How long can bodies be preserved in freezer ambulances?',
+    'a' => 'Our modern mortuary freezer vans maintain sub-zero temperatures reliably for extended durations, ensuring respectful and dignified transport across any district in Bangladesh.',
   ],
   [
-    'q' => 'অ্যাম্বুলেন্সে কি সার্বক্ষণিক সেন্ট্রাল অক্সিজেন ও জরুরি মনিটর সুবিধা রয়েছে?',
-    'a' => 'হ্যাঁ, প্রতিটি এসি ও আইসিইউ অ্যাম্বুলেন্সে সেন্ট্রাল অক্সিজেন লাইন, সাকশন মেশিন, পালস অক্সিমিটার এবং আইসিইউ ইউনিটে ভেন্টিলেটর ও কার্ডিয়াক মনিটর সার্বক্ষণিক সক্রিয় থাকে।',
+    'q' => 'Are central oxygen and emergency vitals monitors active during transit?',
+    'a' => 'Yes, all AC and ICU ambulances feature central oxygen lines, suction machines, and pulse oximeters, while ICU units include mechanical ventilators and multi-parameter cardiac monitors.',
   ],
 ];
 ?>
 <!doctype html>
-<html lang="bn">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0D9488">
-  <title>বুক অ্যাম্বুলেন্স — ইজি হেলথকেয়ার</title>
+  <title>Book Ambulance — Easy Healthcare</title>
   <link rel="icon" type="image/png" href="<?= $baseUrl ?>/assets/images/fevicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -126,22 +126,22 @@ $faqs = [
       <div class="doctor-hero-inner">
         <div class="doctor-hero-badge">
           <i data-lucide="siren" aria-hidden="true"></i>
-          <span>২৪/৭ সার্বক্ষণিক জরুরি অ্যাম্বুলেন্স সহায়তা</span>
+          <span>24/7 Rapid Emergency Ambulance Network</span>
         </div>
         <h1 class="doctor-hero-title" id="ambulance-hero-title">
-          জরুরি প্রয়োজনে দ্রুততম সময়ে <span>অ্যাম্বুলেন্স কল করুন</span>
+          Immediate & Trusted <span>Emergency Ambulance Service</span>
         </h1>
         <p class="doctor-hero-desc">
-          ঢাকা সহ সারা বাংলাদেশে মুমূর্ষু রোগী স্থানান্তরে প্রস্তুত আধুনিক লাইফ সাপোর্ট ও এসি অ্যাম্বুলেন্স নেটওয়ার্ক।
+          Modern life support, ICU, and AC ambulance network on standby across Dhaka and all 64 districts of Bangladesh.
         </p>
 
         <div class="ambulance-hero-actions">
           <a class="ambulance-hero-hotline" href="tel:09610001234">
             <i data-lucide="phone-call" aria-hidden="true"></i>
-            <span>হটলাইন: ০৯৬১০০০১২৩৪</span>
+            <span>Hotline: 09610001234</span>
           </a>
           <a class="ambulance-hero-btn" href="#booking-form">
-            <span>অনলাইন বুকিং ফর্ম</span>
+            <span>Online Booking Form</span>
             <i data-lucide="arrow-down" aria-hidden="true"></i>
           </a>
         </div>
@@ -155,21 +155,21 @@ $faqs = [
         <!-- 1. Ambulance Types Grid (6 Cards, 3 per row) -->
         <div class="doctor-block">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">আমাদের বহর</p>
-            <h2 class="doctor-block-heading">অ্যাম্বুলেন্সের ধরন ও সেবাসমূহ</h2>
-            <p class="doctor-block-sub">রোগীর শারীরিক অবস্থা ও প্রয়োজন অনুযায়ী সঠিক অ্যাম্বুলেন্স বেছে নিন</p>
+            <p class="doctor-block-eyebrow">Our Fleet</p>
+            <h2 class="doctor-block-heading">Ambulance Categories & Services</h2>
+            <p class="doctor-block-sub">Choose the ideal medical transit unit tailored to the patient’s condition</p>
           </div>
 
           <div class="doctor-grid">
             <?php foreach ($ambulanceTypes as $item): ?>
-              <article class="doctor-card">
+              <article class="doctor-card ambulance-card">
                 <div class="doctor-card-media">
                   <img src="<?= htmlspecialchars($item['image'], ENT_QUOTES, 'UTF-8') ?>" alt="<?= htmlspecialchars($item['title'], ENT_QUOTES, 'UTF-8') ?>" loading="lazy">
                 </div>
                 <div class="doctor-card-body">
                   <h3 class="doctor-card-title"><?= htmlspecialchars($item['title'], ENT_QUOTES, 'UTF-8') ?></h3>
                   <a href="#booking-form" class="doctor-card-btn">
-                    <span>বুকিং করুন</span>
+                    <span>Book Now</span>
                     <i data-lucide="arrow-right" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -181,9 +181,9 @@ $faqs = [
         <!-- 2. Booking Process (Clean Timeline Style) -->
         <div class="doctor-block">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">জরুরি সেবা সহজ ধাপে</p>
-            <h2 class="doctor-block-heading">অ্যাম্বুলেন্স বুকিং প্রসেস</h2>
-            <p class="doctor-block-sub">মাত্র ৪টি দ্রুত পদক্ষেপে কাঙ্ক্ষিত অ্যাম্বুলেন্স আপনার দরজায় পৌঁছাবে</p>
+            <p class="doctor-block-eyebrow">Fast & Organized</p>
+            <h2 class="doctor-block-heading">Ambulance Booking Process</h2>
+            <p class="doctor-block-sub">4 quick steps to have an emergency vehicle at your exact location</p>
           </div>
 
           <div class="booking-timeline">
@@ -202,9 +202,9 @@ $faqs = [
         <!-- 3. Area Coverage Section -->
         <div class="doctor-block">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">সারাদেশে নেটওয়ার্ক</p>
-            <h2 class="doctor-block-heading">আমাদের এরিয়া কাভারেজ</h2>
-            <p class="doctor-block-sub">ঢাকা মহানগর সহ দেশের যেকোনো প্রান্ত থেকে সার্বক্ষণিক অ্যাম্বুলেন্স সাপোর্ট</p>
+            <p class="doctor-block-eyebrow">Nationwide Network</p>
+            <h2 class="doctor-block-heading">Our Area Coverage</h2>
+            <p class="doctor-block-sub">24/7 dedicated coverage across Dhaka Metro and all districts of Bangladesh</p>
           </div>
 
           <div class="coverage-grid">
@@ -224,64 +224,64 @@ $faqs = [
         <!-- 4. Emergency Booking Form & Quick Call Panel -->
         <div class="doctor-block" id="booking-form">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">তাৎক্ষণিক বুকিং</p>
-            <h2 class="doctor-block-heading">জরুরি অ্যাম্বুলেন্স বুকিং ফর্ম</h2>
-            <p class="doctor-block-sub">তথ্য দিয়ে সাবমিট করার সাথে সাথেই আমাদের ডিসপ্যাচ টিম আপনার সাথে যোগাযোগ করবে</p>
+            <p class="doctor-block-eyebrow">Instant Booking</p>
+            <h2 class="doctor-block-heading">Emergency Ambulance Booking Form</h2>
+            <p class="doctor-block-sub">Submit details below and our emergency dispatch team will contact you immediately</p>
           </div>
 
           <div class="booking-form-wrap">
             <div class="booking-form-left">
-              <h3>অনলাইন বুকিং রিকোয়েস্ট</h3>
-              <p>সঠিক তথ্য দিন যাতে দ্রুততম অ্যাম্বুলেন্স পাঠানো নিশ্চিত করা যায়।</p>
+              <h3>Online Booking Request</h3>
+              <p>Please provide accurate pickup details for the fastest emergency dispatch.</p>
 
-              <form class="ambulance-form" onsubmit="event.preventDefault(); alert('আপনার বুকিং রিকোয়েস্ট গ্রহণ করা হয়েছে। আমাদের টিম খুব দ্রুত আপনার নম্বরে কল দিচ্ছে।');">
+              <form class="ambulance-form" onsubmit="event.preventDefault(); alert('Your booking request has been received. Our dispatch coordinator is calling your phone number now.');">
                 <div class="form-group">
-                  <label for="pickup-loc">পিকআপ লোকেশন (রোগীর বর্তমান অবস্থান)*</label>
-                  <input type="text" id="pickup-loc" name="pickup" placeholder="বাসা/রোড, এলাকা, থানা..." required>
+                  <label for="pickup-loc">Pickup Location (Patient’s Current Address)*</label>
+                  <input type="text" id="pickup-loc" name="pickup" placeholder="House/Road, Area, City..." required>
                 </div>
 
                 <div class="form-group">
-                  <label for="drop-loc">গন্তব্য (হাসপাতাল বা ঠিকানা)*</label>
-                  <input type="text" id="drop-loc" name="drop" placeholder="হাসপাতালের নাম বা ঠিকানা..." required>
+                  <label for="drop-loc">Destination (Hospital or Address)*</label>
+                  <input type="text" id="drop-loc" name="drop" placeholder="Hospital name or destination address..." required>
                 </div>
 
                 <div class="form-group">
-                  <label for="amb-type">অ্যাম্বুলেন্সের ধরন*</label>
+                  <label for="amb-type">Ambulance Type*</label>
                   <select id="amb-type" name="type" required>
-                    <option value="">নির্বাচন করুন</option>
-                    <option value="ac">এসি অ্যাম্বুলেন্স</option>
-                    <option value="non-ac">নন-এসি অ্যাম্বুলেন্স</option>
-                    <option value="icu">আইসিইউ / সিসিইউ লাইফ সাপোর্ট</option>
-                    <option value="freezer">ফ্রিজার অ্যাম্বুলেন্স (লাশবাহী)</option>
-                    <option value="nicu">এনআইসিইউ বেবি অ্যাম্বুলেন্স</option>
-                    <option value="air">এয়ার অ্যাম্বুলেন্স</option>
+                    <option value="">Select Ambulance Type</option>
+                    <option value="ac">AC Ambulance</option>
+                    <option value="non-ac">Non-AC Ambulance</option>
+                    <option value="icu">ICU / CCU Life Support</option>
+                    <option value="freezer">Freezer Mortuary Van</option>
+                    <option value="nicu">NICU Neonatal Ambulance</option>
+                    <option value="air">Air Ambulance (Helicopter)</option>
                   </select>
                 </div>
 
                 <div class="form-group">
-                  <label for="patient-status">রোগীর বর্তমান অবস্থা</label>
+                  <label for="patient-status">Patient’s Current Condition</label>
                   <select id="patient-status" name="status">
-                    <option value="normal">সাধারণ স্থানান্তর</option>
-                    <option value="oxygen">অক্সিজেন সাপোর্ট প্রয়োজন</option>
-                    <option value="critical">আশঙ্কাজনক (ক্রিটিক্যাল কেয়ার)</option>
-                    <option value="wheelchair">স্ট্র্যাচার / হুইলচেয়ার প্রয়োজন</option>
+                    <option value="normal">Standard Medical Transfer</option>
+                    <option value="oxygen">Oxygen Support Required</option>
+                    <option value="critical">Critical Condition (Intensive Care)</option>
+                    <option value="wheelchair">Stretcher / Wheelchair Required</option>
                   </select>
                 </div>
 
                 <div class="form-group">
-                  <label for="contact-name">যোগাযোগকারীর নাম*</label>
-                  <input type="text" id="contact-name" name="name" placeholder="আপনার নাম লিখুন" required>
+                  <label for="contact-name">Contact Person’s Name*</label>
+                  <input type="text" id="contact-name" name="name" placeholder="Enter your full name" required>
                 </div>
 
                 <div class="form-group">
-                  <label for="contact-phone">জরুরি মোবাইল নম্বর*</label>
-                  <input type="tel" id="contact-phone" name="phone" placeholder="০১৭xxxxxxxx" required>
+                  <label for="contact-phone">Emergency Phone Number*</label>
+                  <input type="tel" id="contact-phone" name="phone" placeholder="017xxxxxxxx" required>
                 </div>
 
                 <div class="form-group form-full">
                   <button type="submit" class="ambulance-submit-btn">
                     <i data-lucide="send" aria-hidden="true"></i>
-                    <span>জরুরি বুকিং রিকোয়েস্ট পাঠান</span>
+                    <span>Send Emergency Booking Request</span>
                   </button>
                 </div>
               </form>
@@ -293,21 +293,21 @@ $faqs = [
                 <div class="siren-icon">
                   <i data-lucide="phone-incoming" aria-hidden="true"></i>
                 </div>
-                <h4>সরাসরি ফোনে বুকিং চান?</h4>
-                <p>যেকোনো জরুরি মুহূর্তে সরাসরি আমাদের হটলাইনে ফোন দিয়ে তৎক্ষণাৎ অ্যাম্বুলেন্স কনফার্ম করুন।</p>
+                <h4>Prefer Direct Phone Booking?</h4>
+                <p>For immediate emergency response, call our 24/7 hotline directly to dispatch an ambulance now.</p>
                 <a class="quick-call-number" href="tel:09610001234">
-                  ০৯৬১০০০১২৩৪
+                  09610001234
                 </a>
-                <p class="text-xs text-gray-500 m-0">২৪ ঘণ্টা / ৭ দিন খোলা</p>
+                <p class="text-xs text-gray-500 m-0">Available 24 Hours / 7 Days</p>
               </div>
 
               <div class="sidebar-features">
-                <h4>ইজি অ্যাম্বুলেন্সের সুবিধাসমূহ</h4>
+                <h4>Easy Ambulance Highlights</h4>
                 <ul class="sidebar-feature-list">
-                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> জিপিএস লাইভ ট্র্যাকিং সিস্টেম</li>
-                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> সার্বক্ষণিক সেন্ট্রাল অক্সিজেন</li>
-                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> বিএমডিসি রেজিস্টার্ড ব্যাকআপ</li>
-                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> সরকার নির্ধারিত ন্যায্য ভাড়া</li>
+                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> GPS Live Tracking System</li>
+                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Continuous Central Oxygen</li>
+                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> BMDC Registered Medical Backup</li>
+                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Standard Transparent Pricing</li>
                 </ul>
               </div>
             </div>
@@ -317,9 +317,9 @@ $faqs = [
         <!-- 5. FAQ Section (Light Gray Border, Clean White Background) -->
         <div class="doctor-block">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">সাধারণ জিজ্ঞাসা</p>
-            <h2 class="doctor-block-heading">সচরাচর জিজ্ঞাসিত প্রশ্নাবলী (FAQ)</h2>
-            <p class="doctor-block-sub">জরুরি অ্যাম্বুলেন্স কল ও বুকিং সংক্রান্ত জরুরি তথ্যাবলী</p>
+            <p class="doctor-block-eyebrow">Common Questions</p>
+            <h2 class="doctor-block-heading">Frequently Asked Questions (FAQ)</h2>
+            <p class="doctor-block-sub">Essential details about emergency ambulance dispatch and hospital transfers</p>
           </div>
 
           <div class="faq-list">

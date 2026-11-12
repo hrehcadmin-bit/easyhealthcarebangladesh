@@ -5,145 +5,145 @@ if (!isset($baseUrl)) {
 
 $services = [
   [
-    'title' => 'মেন কেয়ার',
+    'title' => 'Men\'s Care',
     'image' => $baseUrl . '/assets/images/special-care/men-care.jpg',
   ],
   [
-    'title' => 'ওমেন কেয়ার',
+    'title' => 'Women\'s Care',
     'image' => $baseUrl . '/assets/images/special-care/women-care.jpg',
   ],
   [
-    'title' => 'চাইল্ড অ্যান্ড মাদার কেয়ার',
+    'title' => 'Mother & Child Care',
     'image' => $baseUrl . '/assets/images/special-care/mother-child.jpg',
   ],
   [
-    'title' => 'ক্যান্সার কেয়ার',
+    'title' => 'Cancer Care',
     'image' => $baseUrl . '/assets/images/special-care/cancer-care.jpg',
   ],
   [
-    'title' => 'ডায়াবেটিস কেয়ার',
+    'title' => 'Diabetes Care',
     'image' => $baseUrl . '/assets/images/special-care/diabetes-care.jpg',
   ],
   [
-    'title' => 'মেন্টাল হেলথকেয়ার',
+    'title' => 'Mental Health Care',
     'image' => $baseUrl . '/assets/images/special-care/mental-health.jpg',
   ],
   [
-    'title' => 'হার্ট কেয়ার',
+    'title' => 'Heart Care',
     'image' => $baseUrl . '/assets/images/special-care/heart-care.jpg',
   ],
   [
-    'title' => 'স্কিন কেয়ার',
+    'title' => 'Skin & Dermatology Care',
     'image' => $baseUrl . '/assets/images/special-care/skin-care.jpg',
   ],
   [
-    'title' => 'ফার্টিলিটি কেয়ার',
+    'title' => 'Fertility Care',
     'image' => $baseUrl . '/assets/images/special-care/fertility-care.jpg',
   ],
   [
-    'title' => 'হোম কেয়ার সার্ভিস',
+    'title' => 'In-Home Care Service',
     'image' => $baseUrl . '/assets/images/special-care/home-care.jpg',
   ],
   [
-    'title' => 'পেশেন্ট অ্যাডভোকেসি সার্ভিস',
+    'title' => 'Patient Advocacy Service',
     'image' => $baseUrl . '/assets/images/special-care/patient-advocacy.jpg',
   ],
   [
-    'title' => 'স্মার্ট হোম কেয়ার',
+    'title' => 'Smart Home Care',
     'image' => $baseUrl . '/assets/images/special-care/smart-homecare.jpg',
   ],
   [
-    'title' => 'পেশেন্ট অ্যাটেনডেন্ট সার্ভিস',
+    'title' => 'Patient Attendant Service',
     'image' => $baseUrl . '/assets/images/special-care/patient-attendant.jpg',
   ],
   [
-    'title' => 'সিনিয়র সিটিজেন কেয়ার',
+    'title' => 'Senior Citizen Care',
     'image' => $baseUrl . '/assets/images/special-care/elderly-care.jpg',
   ],
   [
-    'title' => 'ফিজিওথেরাপি ও রিহ্যাব কেয়ার',
+    'title' => 'Physiotherapy & Rehab',
     'image' => $baseUrl . '/assets/images/special-care/physiotherapy.jpg',
   ],
   [
-    'title' => 'প্যালিয়াটিভ কেয়ার সাপোর্ট',
+    'title' => 'Palliative Care Support',
     'image' => $baseUrl . '/assets/images/special-care/palliative-care.jpg',
   ],
 ];
 
 $careSteps = [
   [
-    'step' => '১',
-    'title' => 'প্রয়োজনীয় কেয়ার নির্বাচন',
-    'desc' => 'আপনার বা পরিবারের রোগীর শারীরিক অবস্থা অনুযায়ী উপযুক্ত বিশেষায়িত সেবা বেছে নিন।',
+    'step' => '1',
+    'title' => 'Select Required Care',
+    'desc' => 'Choose the specialized healthcare service best suited for your condition or family member.',
   ],
   [
-    'step' => '২',
-    'title' => 'প্রাথমিক ক্লিনিক্যাল অ্যাসেসমেন্ট',
-    'desc' => 'বিশেষজ্ঞ চিকিৎসক রোগীর মেডিকেল হিস্ট্রি ও বর্তমান প্রেসক্রিপশন মূল্যায়ন করবেন।',
+    'step' => '2',
+    'title' => 'Clinical Assessment',
+    'desc' => 'Our medical team evaluates medical history, prior prescriptions, and physical conditions.',
   ],
   [
-    'step' => '৩',
-    'title' => 'পারসোনালাইজড কেয়ার প্ল্যান',
-    'desc' => 'ঘরে বসে চিকিৎসা, নার্সিং, থেরাপি বা ডিজিটাল মনিটরিংয়ের সুনির্দিষ্ট পরিকল্পনা প্রণয়ন।',
+    'step' => '3',
+    'title' => 'Customized Care Plan',
+    'desc' => 'A personalized care pathway for home nursing, therapy, or telemetry monitoring is designed.',
   ],
   [
-    'step' => '৪',
-    'title' => 'সার্বক্ষণিক মনিটরিং ও সুস্থতা',
-    'desc' => 'কেয়ার ম্যানেজার ও ডাক্তারের নিয়মিত ফলো-আপের মাধ্যমে দ্রুত ও স্থায়ী স্বাস্থ্য পুনরুদ্ধার।',
+    'step' => '4',
+    'title' => 'Monitoring & Recovery',
+    'desc' => 'Continuous monitoring by care managers and doctors ensures sustainable health improvement.',
   ],
 ];
 
 $careStandards = [
   [
     'icon' => 'stethoscope',
-    'badge' => 'বিশেষজ্ঞ চিকিৎসকের দল',
-    'title' => 'মাল্টিডিসিপ্লিনারি মেডিকেল বোর্ড',
-    'desc' => 'প্রতিটি বিশেষায়িত ক্যাটাগরিতে বিএমডিসি নিবন্ধিত অভিজ্ঞ সিনিয়র বিশেষজ্ঞ চিকিৎসকদের নিয়মিত গাইডেন্স ও তত্ত্বাবধান।',
+    'badge' => 'Multidisciplinary Board',
+    'title' => 'Senior Specialist Supervision',
+    'desc' => 'Active clinical oversight from BMDC-registered specialist physicians across all care categories.',
   ],
   [
     'icon' => 'home',
-    'badge' => 'হাসপাতাল মানের কেয়ার',
-    'title' => 'ঘরে বসেই উন্নত স্বাস্থ্যসেবা',
-    'desc' => 'প্রশিক্ষিত মেল/ফিমেল নার্স, দক্ষ ফিজিওথেরাপিস্ট ও কেয়ারগিভারের মাধ্যমে বাড়িতেই সর্বোচ্চ আরাম ও চিকিৎসাসেবা।',
+    'badge' => 'Hospital-Grade Care',
+    'title' => 'Clinical Quality at Home',
+    'desc' => 'Certified male/female nurses, licensed physiotherapists, and trained caregivers delivering care at home.',
   ],
   [
     'icon' => 'user-check',
-    'badge' => '২৪/৭ সহায়তা',
-    'title' => 'ডেডিকেটেড কেয়ার কো-অর্ডিনেটর',
-    'desc' => 'জরুরি যেকোনো প্রয়োজন, ওষুধ সমন্বয়, ডক্টর ভিজিট ও ল্যাব টেস্ট শিডিউলিংয়ে সার্বক্ষণিক একজন পারসোনাল কেয়ার ম্যানেজার।',
+    'badge' => '24/7 Dedicated Care',
+    'title' => 'Personal Care Coordinator',
+    'desc' => 'A dedicated care manager to organize doctor visits, medicine schedules, and diagnostic test bookings.',
   ],
 ];
 
 $faqs = [
   [
-    'q' => 'স্পেশাল কেয়ার জোনের সেবাগুলো কি ঘরে বসে পাওয়া সম্ভব?',
-    'a' => 'হ্যাঁ, আমাদের বেশিরভাগ বিশেষায়িত সেবা যেমন—হোম কেয়ার, পেশেন্ট অ্যাটেনডেন্ট, ফিজিওথেরাপি, ডায়াবেটিস ফলো-আপ ও স্মার্ট মনিটরিং সেবাগুলো সম্পূর্ণভাবে রোগীর বাড়িতে প্রদান করা হয়।',
+    'q' => 'Can Special Care Zone services be delivered in the comfort of home?',
+    'a' => 'Yes, most of our specialized programs—including home nursing, patient attendants, physiotherapy, diabetes follow-ups, and smart vitals monitoring—are delivered directly at the patient’s home.',
   ],
   [
-    'q' => 'পেশেন্ট অ্যাটেনডেন্ট ও হোম নার্সিং সার্ভিসের দায়িত্ব কী কী?',
-    'a' => 'প্রশিক্ষিত অ্যাটেনডেন্টরা রোগীর ব্যক্তিগত পরিচ্ছন্নতা, সময়মতো ওষুধ খাওয়ানো, চলাফেরায় সাহায্য ও প্রাথমিক ভাইটালস চেক করেন। ডিপ্লোমা নার্সরা ইনজেকশন, স্যালাইন, ড্রেসিং, ক্যাথেটার ও জটিল নার্সিং কেয়ার পরিচালনা করেন।',
+    'q' => 'What are the distinct responsibilities of patient attendants vs. home nurses?',
+    'a' => 'Trained patient attendants assist with personal hygiene, timely medication reminders, mobility, and basic vitals. Registered diploma nurses handle IV/IM injections, saline, surgical dressing, catheter care, and advanced post-op nursing.',
   ],
   [
-    'q' => 'ক্যান্সার বা দীর্ঘমেয়াদী প্যালিয়াটিভ রোগীদের কী ধরনের সহায়তা দেওয়া হয়?',
-    'a' => 'ক্যান্সার ও দীর্ঘমেয়াদী রোগীদের ব্যথা নিয়ন্ত্রণ (Pain Management), পুষ্টি পরামর্শ, সাইকোলজিক্যাল কাউন্সেলিং, বেড-সোর প্রতিরোধ ও সার্বক্ষণিক প্যারামেডিক সাপোর্টের মাধ্যমে সর্বোচ্চ স্বস্তি নিশ্চিত করা হয়।',
+    'q' => 'What specialized support is available for oncology and palliative patients?',
+    'a' => 'For cancer and chronic palliative patients, we provide active pain management, clinical nutrition counseling, psychological therapy, bedsore prevention, and 24/7 emergency paramedic backup.',
   ],
   [
-    'q' => 'মেন্টাল হেলথকেয়ারে রোগীর তথ্যের গোপনীয়তা কীভাবে রক্ষা করা হয়?',
-    'a' => 'আমাদের প্রতিটি কাউন্সেলিং ও সাইকোথেরাপি সেশন আন্তর্জাতিক মেডিকেল এথিক্স অনুযায়ী শতভাগ গোপনীয়। কোনো তথ্য রোগীর অনুমতি ব্যতীত কারো সাথে শেয়ার করা হয় না।',
+    'q' => 'How is patient privacy protected during mental health consultations?',
+    'a' => 'Every psychotherapy and counseling session strictly complies with international medical ethics and confidentiality guidelines. Medical data is never disclosed without explicit patient consent.',
   ],
   [
-    'q' => 'একক দিন বা খণ্ডকালীন সময়ের জন্য কি অ্যাটেনডেন্ট সার্ভিস পাওয়া যায়?',
-    'a' => 'হ্যাঁ, রোগীর প্রয়োজন অনুযায়ী ১২ ঘণ্টা (ডে/নাইট শিফট) অথবা ২৪ ঘণ্টার পূর্ণকালীন মাসিক বা সাপ্তাহিক চুক্তিতে পেশেন্ট অ্যাটেনডেন্ট ও নার্সিং সেবা নেওয়ার সুবিধা রয়েছে।',
+    'q' => 'Are attendant services available for flexible or part-time shifts?',
+    'a' => 'Yes, we offer 12-hour day/night shifts, 24-hour full-time live-in caregiver options, as well as weekly and monthly contracts adapted to your family’s schedule.',
   ],
 ];
 ?>
 <!doctype html>
-<html lang="bn">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0D9488">
-  <title>স্পেশাল কেয়ার জোন — ইজি হেলথকেয়ার</title>
+  <title>Special Care Zone — Easy Healthcare</title>
   <link rel="icon" type="image/png" href="<?= $baseUrl ?>/assets/images/fevicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -162,23 +162,23 @@ $faqs = [
       <div class="doctor-hero-inner">
         <div class="doctor-hero-badge">
           <i data-lucide="sparkles" aria-hidden="true"></i>
-          <span>বিশেষায়িত স্বাস্থ্য ও হোমকেয়ার সেবা</span>
+          <span>Specialized Health & Homecare Solutions</span>
         </div>
         <h1 class="doctor-hero-title" id="care-hero-title">
-          আপনার ও পরিবারের জন্য <span>স্পেশাল কেয়ার জোন</span>
+          Special Care Zone <span>For You & Your Family</span>
         </h1>
         <p class="doctor-hero-desc">
-          নির্দিষ্ট স্বাস্থ্য চাহিদায় অভিজ্ঞ চিকিৎসক, বিশেষায়িত থেরাপি ও ঘরে বসে পেশাদার কেয়ারগিভার সাপোর্ট।
+          Tailored healthcare programs, experienced specialists, and dedicated home caregivers for your unique wellness needs.
         </p>
 
         <div class="ambulance-hero-actions">
           <a class="hero-search-btn" href="#services-list" style="padding: 11px 24px; font-size: 15px;">
-            <span>সবগুলো সেবা দেখুন</span>
+            <span>Explore All Services</span>
             <i data-lucide="arrow-down" aria-hidden="true"></i>
           </a>
           <a class="ambulance-hero-btn" href="tel:09610001234">
             <i data-lucide="phone-call" aria-hidden="true"></i>
-            <span>কাউন্সেলিং হটলাইন: ০৯৬১০০০১২৩৪</span>
+            <span>Counseling Hotline: 09610001234</span>
           </a>
         </div>
       </div>
@@ -186,14 +186,14 @@ $faqs = [
 
     <!-- Unified White Background Content Wrapper -->
     <div class="doctor-main-wrap" id="services-list">
-      <div class="doctor-content-container" style="max-width: 1080px;">
+      <div class="doctor-content-container">
 
         <!-- 1. Special Care Zone 16 Products Grid -->
         <div class="doctor-block">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">আমাদের বিশেষায়িত সেবা বহর</p>
-            <h2 class="doctor-block-heading">স্পেশাল কেয়ার জোনের ১৬টি সার্ভিস</h2>
-            <p class="doctor-block-sub">আপনার বা পরিবারের রোগীর প্রয়োজনীয় সেবাটি বেছে নিয়ে বিস্তারিত পরামর্শ গ্রহণ করুন</p>
+            <p class="doctor-block-eyebrow">Our Specialized Fleet</p>
+            <h2 class="doctor-block-heading">16 Dedicated Special Care Services</h2>
+            <p class="doctor-block-sub">Choose the ideal care category tailored to you or your family member's requirements</p>
           </div>
 
           <div class="special-care-grid">
@@ -205,7 +205,7 @@ $faqs = [
                 <div class="doctor-card-body">
                   <h3 class="doctor-card-title"><?= htmlspecialchars($item['title'], ENT_QUOTES, 'UTF-8') ?></h3>
                   <a href="#care-form" class="doctor-card-btn">
-                    <span>বিস্তারিত দেখুন</span>
+                    <span>View Details</span>
                     <i data-lucide="arrow-right" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -217,9 +217,9 @@ $faqs = [
         <!-- 2. Care Process (Timeline Style) -->
         <div class="doctor-block">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">সুনির্দিষ্ট কর্মপদ্ধতি</p>
-            <h2 class="doctor-block-heading">স্পেশাল কেয়ার প্রসেস</h2>
-            <p class="doctor-block-sub">৪টি সমন্বিত ধাপে রোগীর সুস্বাস্থ্য ও সঠিক পরিচর্যা নিশ্চিত করা হয়</p>
+            <p class="doctor-block-eyebrow">Structured Methodology</p>
+            <h2 class="doctor-block-heading">Special Care Process</h2>
+            <p class="doctor-block-sub">4 integrated steps ensuring the highest quality of patient recovery and comfort</p>
           </div>
 
           <div class="booking-timeline">
@@ -238,9 +238,9 @@ $faqs = [
         <!-- 3. Why Choose Special Care Standards -->
         <div class="doctor-block">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">আমাদের অঙ্গীকার</p>
-            <h2 class="doctor-block-heading">কেন আমাদের স্পেশাল কেয়ার বেছে নেবেন</h2>
-            <p class="doctor-block-sub">রোগীর প্রতি পরম মমতা ও সর্বোচ্চ পেশাদারিত্বে আমরা সার্বক্ষণিক পাশে আছি</p>
+            <p class="doctor-block-eyebrow">Our Commitment</p>
+            <h2 class="doctor-block-heading">Why Choose Our Special Care</h2>
+            <p class="doctor-block-sub">Professionalism, compassion, and continuous clinical oversight by your side</p>
           </div>
 
           <div class="coverage-grid">
@@ -260,31 +260,31 @@ $faqs = [
         <!-- 4. Consultation & Service Request Form -->
         <div class="doctor-block" id="care-form">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">বিশেষজ্ঞ কাউন্সেলিং</p>
-            <h2 class="doctor-block-heading">ফ্রি পরামর্শ ও কেয়ার রিকোয়েস্ট ফর্ম</h2>
-            <p class="doctor-block-sub">আপনার তথ্য দিন, আমাদের অভিজ্ঞ কেয়ার কো-অর্ডিনেটর খুব দ্রুত আপনার সাথে যোগাযোগ করবেন</p>
+            <p class="doctor-block-eyebrow">Specialized Counseling</p>
+            <h2 class="doctor-block-heading">Free Consultation & Care Request Form</h2>
+            <p class="doctor-block-sub">Submit your details and our experienced care coordinator will contact you promptly</p>
           </div>
 
           <div class="booking-form-wrap">
             <div class="booking-form-left">
-              <h3>সার্ভিস রিকোয়েস্ট পাঠান</h3>
-              <p>রোগীর চাহিদা অনুযায়ী উপযুক্ত সেবা ও খরচের বিস্তারিত তথ্য জানতে ফর্মটি পূরণ করুন।</p>
+              <h3>Submit Service Request</h3>
+              <p>Fill out the form below to receive customized care packages and doctor recommendations.</p>
 
-              <form class="ambulance-form" onsubmit="event.preventDefault(); alert('আপনার কেয়ার রিকোয়েস্ট গ্রহণ করা হয়েছে। আমাদের কেয়ার ম্যানেজার খুব দ্রুত আপনার নম্বরে যোগাযোগ করবেন।');">
+              <form class="ambulance-form" onsubmit="event.preventDefault(); alert('Your care request has been received. Our clinical care manager will contact your number shortly.');">
                 <div class="form-group">
-                  <label for="care-name">আবেদনকারী বা রোগীর নাম*</label>
-                  <input type="text" id="care-name" name="name" placeholder="নাম লিখুন" required>
+                  <label for="care-name">Applicant or Patient’s Name*</label>
+                  <input type="text" id="care-name" name="name" placeholder="Enter full name" required>
                 </div>
 
                 <div class="form-group">
-                  <label for="care-phone">মোবাইল নম্বর*</label>
-                  <input type="tel" id="care-phone" name="phone" placeholder="০১৭xxxxxxxx" required>
+                  <label for="care-phone">Mobile Phone Number*</label>
+                  <input type="tel" id="care-phone" name="phone" placeholder="017xxxxxxxx" required>
                 </div>
 
                 <div class="form-group">
-                  <label for="care-service">প্রয়োজনীয় সেবা নির্বাচন করুন*</label>
+                  <label for="care-service">Select Required Care Service*</label>
                   <select id="care-service" name="service" required>
-                    <option value="">নির্বাচন করুন</option>
+                    <option value="">Select Service Category</option>
                     <?php foreach ($services as $srv): ?>
                       <option value="<?= htmlspecialchars($srv['title'], ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars($srv['title'], ENT_QUOTES, 'UTF-8') ?></option>
                     <?php endforeach; ?>
@@ -292,24 +292,24 @@ $faqs = [
                 </div>
 
                 <div class="form-group">
-                  <label for="care-duration">সার্ভিসের ধরন / সময়কাল</label>
+                  <label for="care-duration">Service Duration / Schedule</label>
                   <select id="care-duration" name="duration">
-                    <option value="home-visit">হোম ভিজিট ও কনসাল্টেশন</option>
-                    <option value="12hr">১২ ঘণ্টা শিফট অ্যাটেনডেন্ট</option>
-                    <option value="24hr">২৪ ঘণ্টা পূর্ণকালীন কেয়ারগিভার</option>
-                    <option value="monthly">মাসিক বিশেষ প্যাকেজ</option>
+                    <option value="home-visit">Home Visit & Doctor Consultation</option>
+                    <option value="12hr">12-Hour Shift Attendant</option>
+                    <option value="24hr">24-Hour Full-Time Caregiver</option>
+                    <option value="monthly">Monthly Comprehensive Package</option>
                   </select>
                 </div>
 
                 <div class="form-group form-full">
-                  <label for="care-details">রোগীর বর্তমান সমস্যা বা বিশেষ চাহিদা</label>
-                  <textarea id="care-details" name="details" rows="3" placeholder="রোগীর বয়স, শারীরিক সমস্যা বা কোনো বিশেষ নির্দেশনার কথা সংক্ষেপে জানান..."></textarea>
+                  <label for="care-details">Patient Condition or Special Instructions</label>
+                  <textarea id="care-details" name="details" rows="3" placeholder="Briefly specify patient age, physical condition, medical history or special requests..."></textarea>
                 </div>
 
                 <div class="form-group form-full">
                   <button type="submit" class="surgery-submit-btn">
                     <i data-lucide="send" aria-hidden="true"></i>
-                    <span>ফ্রি কেয়ার কাউন্সেলিং রিকোয়েস্ট পাঠান</span>
+                    <span>Send Care Consultation Request</span>
                   </button>
                 </div>
               </form>
@@ -321,21 +321,21 @@ $faqs = [
                 <div class="siren-icon" style="background: #f3e8ff; color: var(--health-primary);">
                   <i data-lucide="heart-handshake" aria-hidden="true"></i>
                 </div>
-                <h4>স্পেশাল কেয়ার হেল্পলাইন</h4>
-                <p>প্যাকেজ বাছাই বা দ্রুত কেয়ারগিভার নিয়োগে সরাসরি আমাদের কেয়ার স্পেশালিস্টের সাথে কথা বলুন।</p>
+                <h4>Special Care Helpline</h4>
+                <p>Speak directly with our care specialist for package selection or urgent caregiver deployment.</p>
                 <a class="quick-call-number" href="tel:09610001234" style="color: var(--health-primary); background: #fbf9ff; border-color: #d8cde9;">
-                  ০৯৬১০০০১২৩৪
+                  09610001234
                 </a>
-                <p class="text-xs text-gray-500 m-0">সকাল ৮টা থেকে রাত ১১টা</p>
+                <p class="text-xs text-gray-500 m-0">Available 8:00 AM to 11:00 PM</p>
               </div>
 
               <div class="sidebar-features">
-                <h4>আমাদের বিশেষ সেবাসমূহ</h4>
+                <h4>Key Service Highlights</h4>
                 <ul class="sidebar-feature-list">
-                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> বিএমডিসি রেজিস্টার্ড ডাক্তার ব্যাকআপ</li>
-                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> ব্যাকগ্রাউন্ড ভেরিফাইড অ্যাটেনডেন্ট</li>
-                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> ২৪/৭ পারসোনাল কেয়ার ম্যানেজার</li>
-                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> ডিজিটাল স্বাস্থ্য মনিটরিং সুবিধা</li>
+                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> BMDC Registered Doctor Oversight</li>
+                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Background-Verified Caregivers</li>
+                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> 24/7 Dedicated Care Manager</li>
+                  <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Digital Health Telemetry Support</li>
                 </ul>
               </div>
             </div>
@@ -345,9 +345,9 @@ $faqs = [
         <!-- 5. FAQ Section (Light Gray Border, Clean White Background) -->
         <div class="doctor-block">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">সাধারণ জিজ্ঞাসা</p>
-            <h2 class="doctor-block-heading">স্পেশাল কেয়ার সম্পর্কিত প্রশ্নাবলী (FAQ)</h2>
-            <p class="doctor-block-sub">হোম কেয়ার, পেশেন্ট অ্যাটেনডেন্ট ও বিশেষায়িত সেবা নিয়ে সাধারণ তথ্যাবলী</p>
+            <p class="doctor-block-eyebrow">Common Questions</p>
+            <h2 class="doctor-block-heading">Frequently Asked Questions (FAQ)</h2>
+            <p class="doctor-block-sub">Essential details about in-home care, patient attendants, and specialized treatments</p>
           </div>
 
           <div class="faq-list">
