@@ -1,68 +1,61 @@
 <header class="site-header">
   <div class="topbar">
     <div class="header-container topbar-inner">
-      <p class="welcome-message">স্বাগতম ইজি হেলথকেয়ার অনলাইন প্ল্যাটফর্মে</p>
-      <nav class="utility-nav" aria-label="সহায়ক লিংক">
-        <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/complaint-box"><i data-lucide="message-square-warning" aria-hidden="true"></i><span>অভিযোগ বক্স</span></a>
-        <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/lab-report"><i data-lucide="file-heart" aria-hidden="true"></i><span>অনলাইন ল্যাব রিপোর্ট</span></a>
-        <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/patient-portal"><i data-lucide="user-round" aria-hidden="true"></i><span>পেশেন্ট পোর্টাল</span></a>
-        <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/doctor-portal"><i data-lucide="stethoscope" aria-hidden="true"></i><span>ডাক্তার পোর্টাল</span></a>
+      <p class="welcome-message">Welcome to Easy Healthcare Online Platform</p>
+      <nav class="utility-nav" aria-label="Utility navigation">
+        <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/complaint-box"><i data-lucide="message-square-warning" aria-hidden="true"></i><span>Complaint Box</span></a>
+        <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/lab-report"><i data-lucide="file-heart" aria-hidden="true"></i><span>Online Lab Report</span></a>
+        <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/patient-portal"><i data-lucide="user-round" aria-hidden="true"></i><span>Patient Portal</span></a>
+        <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/doctor-portal"><i data-lucide="stethoscope" aria-hidden="true"></i><span>Doctor Portal</span></a>
       </nav>
     </div>
   </div>
 
   <div class="mainbar">
     <div class="header-container mainbar-inner">
-      <a class="brand-mark" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/" aria-label="ইজি হেলথকেয়ার হোম">
-        <img src="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/assets/images/logo.png" alt="ইজি হেলথকেয়ার">
+      <a class="brand-mark" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/" aria-label="Easy Healthcare Home">
+        <img src="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/assets/images/logo.png" alt="Easy Healthcare">
       </a>
 
-      <button class="menu-toggle" type="button" aria-label="মেনু খুলুন" aria-expanded="false" aria-controls="primary-navigation">
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
         <i data-lucide="menu" aria-hidden="true"></i>
       </button>
 
-      <nav class="primary-navigation" id="primary-navigation" aria-label="প্রধান নেভিগেশন">
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Primary navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/find-doctor">ফাইন্ড ডাক্তার</a>
+            <a class="navigation-link" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/find-doctor">Find Doctor</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/online-doctor-consult">অনলাইন ডাক্তার কনসাল্ট</a>
+            <a class="navigation-link" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/online-doctor-consult">Online Doctor Consult</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/online-diagnostic-lab">অনলাইন ডায়াগনস্টিক ল্যাব</a>
+            <a class="navigation-link" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/online-diagnostic-lab">Online Diagnostic Lab</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/special-care-zone">স্পেশাল কেয়ার জোন</a>
+            <a class="navigation-link" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/special-care-zone">Special Care</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/safe-surgery">সেফ সার্জারি</a>
+            <a class="navigation-link" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/safe-surgery">Safe Surgery</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/medical-tourism">মেডিক্যাল ট্যুরিজম</a>
+            <a class="navigation-link" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/medical-tourism">Medical Tour</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/partner-plan">পার্টনার প্ল্যান</a>
+            <a class="navigation-link" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/ambulance-booking">Call Ambulance</a>
           </li>
         </ul>
         <div class="mobile-utility-links">
-          <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/complaint-box"><i data-lucide="message-square-warning" aria-hidden="true"></i><span>অভিযোগ বক্স</span></a>
-          <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/lab-report"><i data-lucide="file-heart" aria-hidden="true"></i><span>অনলাইন ল্যাব রিপোর্ট</span></a>
-          <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/patient-portal"><i data-lucide="user-round" aria-hidden="true"></i><span>পেশেন্ট পোর্টাল</span></a>
-          <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/doctor-portal"><i data-lucide="stethoscope" aria-hidden="true"></i><span>ডাক্তার পোর্টাল</span></a>
+          <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/complaint-box"><i data-lucide="message-square-warning" aria-hidden="true"></i><span>Complaint Box</span></a>
+          <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/lab-report"><i data-lucide="file-heart" aria-hidden="true"></i><span>Online Lab Report</span></a>
+          <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/patient-portal"><i data-lucide="user-round" aria-hidden="true"></i><span>Patient Portal</span></a>
+          <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/doctor-portal"><i data-lucide="stethoscope" aria-hidden="true"></i><span>Doctor Portal</span></a>
         </div>
       </nav>
 
       <div class="header-actions">
-        <a class="subscription-button" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/subscription-plan">
-          <i data-lucide="badge-percent" aria-hidden="true"></i>
-          <span>সাবস্ক্রিপশন প্ল্যান</span>
-          <i data-lucide="arrow-right" aria-hidden="true"></i>
-        </a>
-        <a class="emergency-button" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/ambulance-booking">
-          <i data-lucide="ambulance" aria-hidden="true"></i>
-          <span>বুক অ্যাম্বুলেন্স</span>
-          <i data-lucide="arrow-right" aria-hidden="true"></i>
+        <a class="login-button" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/login">
+          <span>Login / SignUp</span>
         </a>
       </div>
     </div>

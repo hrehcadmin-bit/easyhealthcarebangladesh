@@ -5,86 +5,88 @@ if (!isset($baseUrl)) {
 
 $specialties = [
   [
-    'title' => 'ফাইন্ড ডাক্তার নেয়ার ইউ',
+    'title' => 'Find Doctors Near You',
     'image' => $baseUrl . '/assets/images/doctors/medicine.jpg',
   ],
   [
-    'title' => 'ইজি হেলথকেয়ার স্পেশাল ডাক্তার',
+    'title' => 'Easy Healthcare Special Doctors',
     'image' => $baseUrl . '/assets/images/doctors/cardiology.jpg',
   ],
   [
-    'title' => 'ঢাকা সিটি স্পেশাল ডাক্তার',
+    'title' => 'Dhaka City Specialist Doctors',
     'image' => $baseUrl . '/assets/images/doctors/pediatrics.jpg',
   ],
   [
-    'title' => 'মেট্রো সিটি সিলেক্টেড ডাক্তার',
+    'title' => 'Metro City Selected Doctors',
     'image' => $baseUrl . '/assets/images/doctors/gynecology.jpg',
   ],
   [
-    'title' => 'সিলেক্টেড হসপিটাল ডাক্তার',
+    'title' => 'Selected Hospital Doctors',
     'image' => $baseUrl . '/assets/images/doctors/orthopedics.jpg',
   ],
   [
-    'title' => 'ইন্টারন্যাশনাল স্পেশাল ডাক্তার',
+    'title' => 'International Specialist Doctors',
     'image' => $baseUrl . '/assets/images/doctors/dermatology.jpg',
   ],
 ];
 
 $bookingSteps = [
   [
-    'step' => '১',
-    'title' => 'ডাক্তার বা ক্যাটাগরি খুঁজুন',
-    'desc' => 'আপনার এলাকা, বিশেষত্ব বা হাসপাতাল অনুযায়ী পছন্দের চিকিৎসক বেছে নিন।',
+    'step' => '1',
+    'title' => 'Search Doctor or Specialty',
+    'desc' => 'Choose your preferred specialist based on your location, specialty, or hospital.',
   ],
   [
-    'step' => '২',
-    'title' => 'তারিখ ও সময় নির্ধারণ করুন',
-    'desc' => 'ডাক্তারের চেম্বার শিডিউল দেখে আপনার সুবিধাজনক দিন ও সময় নির্বাচন করুন।',
+    'step' => '2',
+    'title' => 'Select Date & Time',
+    'desc' => 'Check the doctor\'s chamber schedule and select a date and time that suits you.',
   ],
   [
-    'step' => '৩',
-    'title' => 'বুকিং নিশ্চিত করুন',
-    'desc' => 'প্রয়োজনীয় তথ্য দিয়ে সরাসরি অনলাইন বুকিং সম্পন্ন করুন এবং কনফার্মেশন নিন।',
+    'step' => '3',
+    'title' => 'Confirm Your Booking',
+    'desc' => 'Provide your essential details to complete the online booking and get immediate confirmation.',
   ],
   [
-    'step' => '৪',
-    'title' => 'পরামর্শ ও সেবা গ্রহণ করুন',
-    'desc' => 'নির্দিষ্ট সময়ে সরাসরি চেম্বারে অথবা ঘরে বসেই অনলাইন ভিডিও কলে পরামর্শ নিন।',
+    'step' => '4',
+    'title' => 'Receive Consultation & Care',
+    'desc' => 'Consult directly at the chamber at your scheduled time or via high-quality video call from home.',
   ],
 ];
 
 $faqs = [
   [
-    'q' => 'কীভাবে ইজি হেলথকেয়ারে ডাক্তার অ্যাপয়েন্টমেন্ট বুক করব?',
-    'a' => 'খুব সহজেই! উপরে থাকা ক্যাটাগরি বা সার্চ বার থেকে পছন্দের ডাক্তার নির্বাচন করে "সার্চ ডাক্তার" বাটনে ক্লিক করুন। এরপর সময় নির্বাচন করে আপনার নাম ও ফোন নম্বর দিয়ে বুকিং সম্পন্ন করুন।',
+    'q' => 'How do I book a doctor appointment on Easy Healthcare?',
+    'a' => 'Very easily! Choose your preferred category or use the search bar above, then click "Search Doctors". Next, pick a convenient time slot and enter your name and phone number to complete the booking.',
   ],
   [
-    'q' => 'চেম্বারে যাওয়ার পাশাপাশি কি অনলাইনে ভিডিও কলে পরামর্শ নেওয়া যাবে?',
-    'a' => 'হ্যাঁ, আমাদের প্ল্যাটফর্মে চেম্বার সিরিয়ালের পাশাপাশি ঘরে বসেই অভিজ্ঞ চিকিৎসকদের সাথে হাই-কোয়ালিটি ভিডিও কলে সরাসরি কথা বলার পূর্ণ সুবিধা রয়েছে।',
+    'q' => 'Can I get an online video consultation in addition to visiting chambers?',
+    'a' => 'Yes, our platform provides full access to high-quality video consultations with experienced doctors from the comfort of your home, as well as in-person chamber serials.',
   ],
   [
-    'q' => 'বুকিং কনফার্মেশন কীভাবে পাব?',
-    'a' => 'বুকিং সম্পন্ন হওয়ার সাথে সাথেই আপনার নিবন্ধিত মোবাইল নম্বরে এসএমএস এবং ইমেইলে সিরিয়াল নম্বর, সময় ও চেম্বারের বিস্তারিত ঠিকানা পাঠিয়ে দেওয়া হবে।',
+    'q' => 'How will I receive booking confirmation?',
+    'a' => 'As soon as your booking is confirmed, an SMS and email will be sent to your registered mobile number and email with the serial number, appointment time, and detailed chamber address.',
   ],
   [
-    'q' => 'বুকিং করার পর সময় পরিবর্তন বা বাতিল করা যাবে কি?',
-    'a' => 'হ্যাঁ, অ্যাপয়েন্টমেন্টের নির্ধারিত সময়ের নির্দিষ্ট সময় আগে আমাদের পেশেন্ট পোর্টাল থেকে অথবা সাপোর্ট হেল্পলাইনে ফোন করে সহজেই সময় পরিবর্তন বা বাতিল করতে পারবেন।',
+    'q' => 'Can I reschedule or cancel an appointment after booking?',
+    'a' => 'Yes, you can easily reschedule or cancel your appointment prior to the scheduled time through our Patient Portal or by calling our support helpline.',
   ],
   [
-    'q' => 'জরুরি চিকিৎসায় বা অ্যাম্বুলেন্সের প্রয়োজনে কী করব?',
-    'a' => 'জরুরি যেকোনো প্রয়োজনে আমাদের হেডারে থাকা "বুক অ্যাম্বুলেন্স" বাটনে ক্লিক করে সরাসরি কল করতে পারেন অথবা জরুরি হেল্পলাইনে ২৪/৭ যোগাযোগ করতে পারেন।',
+    'q' => 'What should I do in an emergency or for an ambulance?',
+    'a' => 'For any medical emergency, click the "Book Ambulance" button in the header to call directly or reach out to our 24/7 emergency helpline.',
   ],
 ];
 ?>
 <!doctype html>
-<html lang="bn">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#443962">
-  <title>ফাইন্ড ডাক্তার — ইজি হেলথকেয়ার</title>
+  <meta name="theme-color" content="#0D9488">
+  <title>Find Doctor — Easy Healthcare</title>
   <link rel="icon" type="image/png" href="<?= $baseUrl ?>/assets/images/fevicon.png">
-  <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="<?= $baseUrl ?>/assets/css/header.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
@@ -99,20 +101,20 @@ $faqs = [
       <div class="doctor-hero-inner">
         <div class="doctor-hero-badge">
           <i data-lucide="stethoscope" aria-hidden="true"></i>
-          <span>যাচাইকৃত বিশেষজ্ঞ চিকিৎসক ডিরেক্টরি</span>
+          <span>Verified Specialist Doctor Directory</span>
         </div>
         <h1 class="doctor-hero-title" id="doctor-hero-title">
-          আপনার প্রয়োজনীয় বিশেষজ্ঞ <span>ডাক্তার খুঁজুন</span>
+          Find the Specialist <span>Doctor You Need</span>
         </h1>
         <p class="doctor-hero-desc">
-          বিএমডিসি নিবন্ধিত অভিজ্ঞ চিকিৎসকদের তালিকা থেকে আপনার স্বাস্থ্য সমস্যার সঠিক বিশেষজ্ঞ বেছে নিন।
+          Choose the right specialist for your health concerns from our curated list of BMDC-registered, experienced doctors.
         </p>
 
         <form class="doctor-hero-search" action="#doctor-list" method="GET" role="search">
           <i data-lucide="search" aria-hidden="true"></i>
-          <input type="text" name="q" placeholder="ডাক্তারের নাম, বিশেষত্ব বা হাসপাতাল লিখে খুঁজুন..." aria-label="ডাক্তার অনুসন্ধান">
+          <input type="text" name="q" placeholder="Search by doctor name, specialty, or hospital..." aria-label="Search doctors">
           <button type="submit" class="hero-search-btn">
-            <span>অনুসন্ধান</span>
+            <span>Search</span>
             <i data-lucide="arrow-right" aria-hidden="true"></i>
           </button>
         </form>
@@ -126,9 +128,9 @@ $faqs = [
         <!-- 1. Doctor Categories Grid (6 Cards, 3 per row) -->
         <div class="doctor-block">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">ডাক্তার তালিকা ও ক্যাটাগরি</p>
-            <h2 class="doctor-block-heading">বিশেষজ্ঞ ডাক্তার ক্যাটাগরি</h2>
-            <p class="doctor-block-sub">আপনার পছন্দ ও প্রয়োজন অনুযায়ী বিভাগ নির্বাচন করে দ্রুত ডাক্তার খুঁজুন</p>
+            <p class="doctor-block-eyebrow">Doctor Directory & Categories</p>
+            <h2 class="doctor-block-heading">Specialist Doctor Categories</h2>
+            <p class="doctor-block-sub">Quickly find doctors by selecting your preferred department or specialty</p>
           </div>
 
           <div class="doctor-grid">
@@ -140,7 +142,7 @@ $faqs = [
                 <div class="doctor-card-body">
                   <h3 class="doctor-card-title"><?= htmlspecialchars($item['title'], ENT_QUOTES, 'UTF-8') ?></h3>
                   <a href="<?= htmlspecialchars($baseUrl, ENT_QUOTES, 'UTF-8') ?>/find-doctor?category=<?= urlencode($item['title']) ?>" class="doctor-card-btn">
-                    <span>সার্চ ডাক্তার</span>
+                    <span>Search Doctors</span>
                     <i data-lucide="arrow-right" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -152,9 +154,9 @@ $faqs = [
         <!-- 2. Booking Process (Clean Timeline Style, No Bulky Boxes) -->
         <div class="doctor-block">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">খুবই সহজ ও দ্রুত</p>
-            <h2 class="doctor-block-heading">আমরা কীভাবে বুকিং করি (বুকিং প্রসেস)</h2>
-            <p class="doctor-block-sub">মাত্র ৪টি সহজ ধাপে আপনার কাঙ্ক্ষিত ডাক্তারের অ্যাপয়েন্টমেন্ট নিশ্চিত করুন</p>
+            <p class="doctor-block-eyebrow">Simple & Fast</p>
+            <h2 class="doctor-block-heading">How We Book (Booking Process)</h2>
+            <p class="doctor-block-sub">Confirm your doctor's appointment in just 4 simple steps</p>
           </div>
 
           <div class="booking-timeline">
@@ -173,9 +175,9 @@ $faqs = [
         <!-- 3. FAQ Section (Light Gray Border, Clean White Background, No Gradient) -->
         <div class="doctor-block">
           <div class="doctor-block-header">
-            <p class="doctor-block-eyebrow">সাধারণ জিজ্ঞাসা</p>
-            <h2 class="doctor-block-heading">সচরাচর জিজ্ঞাসিত প্রশ্নাবলী (FAQ)</h2>
-            <p class="doctor-block-sub">ডাক্তার দেখানো ও বুকিং সংক্রান্ত সাধারণ প্রশ্নের উত্তর জেনে নিন</p>
+            <p class="doctor-block-eyebrow">Common Questions</p>
+            <h2 class="doctor-block-heading">Frequently Asked Questions (FAQ)</h2>
+            <p class="doctor-block-sub">Find answers to common questions about doctor consultations and bookings</p>
           </div>
 
           <div class="faq-list">

@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   color-scheme: light;
-  --health-primary: #443962;
-  --health-primary-dark: #352b4d;
-  --health-ink: #302941;
-  --health-muted: #706a7b;
-  --health-line: #e9e5ee;
-  --health-red: #dc2626;
+  --health-primary: #0D9488;
+  --health-primary-dark: #0f766e;
+  --health-secondary: #1D4ED8;
+  --health-emergency: #DC2626;
+  --health-warning: #D97706;
+  --health-ink: #1f2937;
+  --health-muted: #6b7280;
+  --health-line: #e5e7eb;
+  --health-red: #DC2626;
 }
 
 * {
@@ -19,7 +24,7 @@ html {
 body {
   margin: 0;
   color: var(--health-ink);
-  font-family: "SolaimanLipi", sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 button,
@@ -85,7 +90,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: #f0edf5;
+  color: #e6fffa;
   font-size: 12px;
   white-space: nowrap;
 }
@@ -108,15 +113,15 @@ a {
 .mainbar {
   position: relative;
   background:
-    radial-gradient(ellipse at 82% 28%, rgb(220 213 236 / 55%), transparent 34%),
-    linear-gradient(115deg, #f8f6fb 0%, #fbfaff 54%, #f0edf7 100%);
+    radial-gradient(ellipse at 82% 28%, rgb(13 148 136 / 9%), transparent 34%),
+    linear-gradient(115deg, #f0fdfa 0%, #ffffff 54%, #f8fafc 100%);
   border-bottom: 1px solid var(--health-line);
 }
 
 .mainbar-inner {
   display: grid;
   min-height: 76px;
-  grid-template-columns: 48px minmax(0, 1fr) auto;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 22px;
 }
@@ -137,13 +142,15 @@ a {
 
 .primary-navigation {
   min-width: 0;
+  justify-self: center;
+  margin-inline: auto;
 }
 
 .navigation-list {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: clamp(14px, 1.6vw, 24px);
+  justify-content: center;
+  gap: clamp(10px, 1.3vw, 20px);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -157,10 +164,10 @@ a {
   display: inline-flex;
   min-height: 42px;
   align-items: center;
-  padding: 4px 0;
+  padding: 6px 4px;
   color: var(--health-ink);
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 500;
   white-space: nowrap;
 }
 
@@ -183,15 +190,15 @@ a {
   justify-content: flex-start;
   gap: 6px;
   padding: 0 4px;
-  color: var(--health-primary);
+  color: #054E3B;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 600;
   white-space: nowrap;
 }
 
 .subscription-button:hover,
 .subscription-button:focus-visible {
-  color: var(--health-primary-dark);
+  color: #03382a;
 }
 
 .subscription-button svg {
@@ -220,6 +227,29 @@ a {
 .emergency-button:focus-visible {
   border-color: #b91c1c;
   color: #b91c1c;
+}
+
+.login-button {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  border: 1px solid var(--health-primary);
+  border-radius: 5px;
+  color: var(--health-primary);
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all .18s ease;
+}
+
+.login-button:hover,
+.login-button:focus-visible {
+  border-color: var(--health-primary-dark);
+  color: var(--health-primary-dark);
+  background: rgba(13, 148, 136, 0.05);
 }
 
 .emergency-button svg:last-child,
@@ -271,8 +301,8 @@ a {
   position: relative;
   padding: 78px 20px 76px;
   background:
-    radial-gradient(ellipse at 82% 28%, rgb(220 213 236 / 55%), transparent 34%),
-    linear-gradient(115deg, #f8f6fb 0%, #fbfaff 54%, #f0edf7 100%);
+    radial-gradient(ellipse at 82% 28%, rgb(13 148 136 / 9%), transparent 34%),
+    linear-gradient(115deg, #f0fdfa 0%, #ffffff 54%, #f8fafc 100%);
 }
 
 .hero-section::before {
@@ -810,7 +840,7 @@ a {
 
 .site-footer {
   padding: 38px 20px 20px;
-  color: #f0edf5;
+  color: #e6fffa;
   background: var(--health-primary);
 }
 
@@ -905,6 +935,7 @@ a {
 }
 
 .emergency-button:focus-visible,
+.login-button:focus-visible,
 .subscription-button:focus-visible,
 .button-primary:focus-visible,
 .button-secondary:focus-visible,
@@ -995,7 +1026,7 @@ a {
   margin: 18px auto 0;
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1140px) {
   .header-container {
     padding-inline: 16px;
   }
@@ -1052,15 +1083,16 @@ a {
 
   .navigation-link {
     width: 100%;
-    min-height: 48px;
+    min-height: 44px;
     font-size: 15px;
+    font-weight: 500;
   }
 
-  .emergency-button {
-    min-height: 40px;
-    gap: 5px;
-    padding-inline: 9px;
-    font-size: 12px;
+  .emergency-button,
+  .login-button {
+    min-height: 38px;
+    padding-inline: 12px;
+    font-size: 13px;
   }
 }
 
@@ -1128,9 +1160,10 @@ a {
     height: 38px;
   }
 
-  .emergency-button {
-    min-height: 38px;
-    padding-inline: 7px;
+  .emergency-button,
+  .login-button {
+    min-height: 36px;
+    padding-inline: 10px;
     font-size: 11px;
   }
 
@@ -1336,9 +1369,11 @@ a {
     gap: 6px;
   }
 
-  .emergency-button {
-    padding-inline: 7px;
+  .emergency-button,
+  .login-button {
+    padding-inline: 8px;
     font-size: 10px;
+    min-height: 32px;
   }
 
   .header-actions {
@@ -1369,8 +1404,8 @@ a {
   justify-content: center;
   padding: 80px 20px;
   background:
-    radial-gradient(ellipse at 82% 28%, rgb(220 213 236 / 55%), transparent 34%),
-    linear-gradient(115deg, #f8f6fb 0%, #fbfaff 54%, #f0edf7 100%);
+    radial-gradient(ellipse at 82% 28%, rgb(13 148 136 / 9%), transparent 34%),
+    linear-gradient(115deg, #f0fdfa 0%, #ffffff 54%, #f8fafc 100%);
   position: relative;
 }
 
@@ -1639,8 +1674,8 @@ a {
 .doctor-card {
   position: relative;
   background:
-    radial-gradient(ellipse at 82% 28%, rgb(220 213 236 / 55%), transparent 34%),
-    linear-gradient(115deg, #f8f6fb 0%, #fbfaff 54%, #f0edf7 100%);
+    radial-gradient(ellipse at 82% 28%, rgb(13 148 136 / 9%), transparent 34%),
+    linear-gradient(115deg, #f0fdfa 0%, #ffffff 54%, #f8fafc 100%);
   border: 1px solid #ebe5f2;
   border-radius: 5px;
   overflow: hidden;

@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   menuToggle.addEventListener("click", () => {
     const shouldOpen = menuToggle.getAttribute("aria-expanded") !== "true";
     menuToggle.setAttribute("aria-expanded", String(shouldOpen));
-    menuToggle.setAttribute("aria-label", shouldOpen ? "মেনু বন্ধ করুন" : "মেনু খুলুন");
+    menuToggle.setAttribute("aria-label", shouldOpen ? "Close menu" : "Open menu");
     navigation.classList.toggle("is-open", shouldOpen);
   });
 
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!event.target.closest(".mainbar-inner") && navigation.classList.contains("is-open")) {
       navigation.classList.remove("is-open");
       menuToggle.setAttribute("aria-expanded", "false");
-      menuToggle.setAttribute("aria-label", "মেনু খুলুন");
+      menuToggle.setAttribute("aria-label", "Open menu");
     }
   });
 
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (event.key !== "Escape") return;
     navigation.classList.remove("is-open");
     menuToggle.setAttribute("aria-expanded", "false");
-    menuToggle.setAttribute("aria-label", "মেনু খুলুন");
+    menuToggle.setAttribute("aria-label", "Open menu");
     menuToggle.focus();
   });
 
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", () => {
       navigation.classList.remove("is-open");
       menuToggle.setAttribute("aria-expanded", "false");
-      menuToggle.setAttribute("aria-label", "মেনু খুলুন");
+      menuToggle.setAttribute("aria-label", "Open menu");
     });
   });
 });

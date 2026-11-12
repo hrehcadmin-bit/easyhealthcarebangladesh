@@ -33,6 +33,6 @@ if (file_exists($rootPhp)) {
 
 // 5. 404 fallback
 http_response_code(404);
-echo "<!doctype html><html lang='bn'><head><meta charset='utf-8'><title>পেজ পাওয়া যায়নি</title><link href='https://fonts.maateen.me/solaiman-lipi/font.css' rel='stylesheet'><style>body{font-family:'SolaimanLipi',sans-serif;text-align:center;padding:50px;color:#443962;}</style></head><body><h1>৪৪৪ — পেজটি পাওয়া যায়নি</h1><p><a href='/'>হোমপেজে ফিরে যান</a></p></body></html>";
+echo "<!doctype html><html lang='bn'><head><meta charset='utf-8'><title>পেজ পাওয়া যায়নি</title><link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap' rel='stylesheet'><style>body{font-family:'Jost',sans-serif;text-align:center;padding:50px;color:#443962;}</style></head><body><h1>৪৪৪ — পেজটি পাওয়া যায়নি</h1><p><a href='/'>হোমপেজে ফিরে যান</a></p></body></html>";
 return true;
 
