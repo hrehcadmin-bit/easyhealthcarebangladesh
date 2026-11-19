@@ -2,12 +2,12 @@
 
 :root {
   color-scheme: light;
-  --health-primary: #0D9488;
-  --health-primary-dark: #0f766e;
+  --health-primary: #25125a;
+  --health-primary-dark: #180a3d;
   --health-secondary: #1D4ED8;
   --health-emergency: #DC2626;
   --health-warning: #D97706;
-  --health-ink: #1f2937;
+  --health-ink: #25125a;
   --health-muted: #6b7280;
   --health-line: #e5e7eb;
   --health-red: #DC2626;
@@ -46,244 +46,419 @@ a {
 
 .header-container {
   width: 100%;
-  max-width: 1250px;
+  max-width: 1280px;
   padding-inline: 20px;
   margin-inline: auto;
 }
 
 .site-header {
   position: sticky;
-  z-index: 50;
+  z-index: 1000;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
-  background: #fff;
+  background: #ffffff;
+  box-shadow: none;
+  border-bottom: none;
+  transition: border-color 0.25s ease;
 }
 
-.topbar {
-  min-height: 38px;
-  color: #fff;
-  background: var(--health-primary);
+/* 1. Top Tier Header (Unico Hospitals Style) */
+.header-top {
+  background: #ffffff;
+  padding: 12px 0;
 }
 
-.topbar-inner {
+.header-top-inner {
   display: flex;
-  min-height: 38px;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 16px;
 }
 
-.welcome-message {
-  margin: 0;
-  font-size: 13px;
-  font-weight: 500;
-  white-space: nowrap;
-}
-
-.utility-nav {
-  display: flex;
-  align-items: center;
-  gap: 22px;
-}
-
-.utility-nav a {
+.brand-logo {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  color: #e6fffa;
-  font-size: 12px;
+  text-decoration: none;
+  flex-shrink: 0;
+  background: transparent;
+}
+
+.brand-logo img {
+  height: 48px;
+  width: auto;
+  max-width: 230px;
+  object-fit: contain;
+  display: block;
+  background: transparent;
+}
+
+.header-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-action-list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.action-item {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Base Pill Button */
+.action-pill {
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 18px;
+  border-radius: 999px;
+  font-size: 13.5px;
+  font-weight: 500;
+  text-decoration: none;
+  background: transparent;
+  transition: border-color 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Unico Hover Animation: Dual label sliding up */
+.hover-anim {
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+.hover-anim .anim-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 100%;
+  height: 100%;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.hover-anim .anim-label:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100%);
+}
+
+.hover-anim:hover .anim-label:nth-child(1) {
+  transform: translateY(-100%);
+}
+
+.hover-anim:hover .anim-label:nth-child(2) {
+  transform: translateY(0);
+}
+
+/* Email Pill: #25125a border, no bg */
+.action-email {
+  border: 1px solid #25125a;
+  color: #25125a;
+}
+
+.action-email .anim-label svg {
+  color: #25125a;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.action-email:hover {
+  border-color: #25125a;
+  color: #25125a;
+  background: rgba(37, 18, 90, 0.05);
+}
+
+/* WhatsApp Pill: #25125a border, no bg */
+.action-whatsapp {
+  border: 1px solid #25125a;
+  color: #25125a;
+}
+
+.action-whatsapp .anim-label svg.whatsapp-icon,
+.action-whatsapp .anim-label .whatsapp-icon {
+  color: #25D366;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.action-whatsapp:hover {
+  border-color: #25125a;
+  color: #25125a;
+  background: rgba(37, 18, 90, 0.05);
+}
+
+/* Circular Search Button (#25125a) */
+.action-search-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #25125a;
+  border: 1px solid #25125a;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.4s ease, border-color 0.4s ease;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.action-search-btn .anim-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.action-search-btn .anim-label:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100%);
+}
+
+.action-search-btn:hover {
+  background: #180a3d;
+  border-color: #180a3d;
+}
+
+.action-search-btn:hover .anim-label:nth-child(1) {
+  transform: translateY(-100%);
+}
+
+.action-search-btn:hover .anim-label:nth-child(2) {
+  transform: translateY(0);
+}
+
+.action-search-btn svg {
+  width: 17px;
+  height: 17px;
+  color: #ffffff;
+}
+
+/* Search Dropdown overlay */
+.header-search-dropdown {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  width: 320px;
+  background: #ffffff;
+  border: 1px solid rgba(37, 18, 90, 0.15);
+  border-radius: 12px;
+  padding: 8px 10px;
+  box-shadow: 0 10px 30px rgba(37, 18, 90, 0.12);
+  display: none;
+  z-index: 100;
+}
+
+.header-search-dropdown.is-open {
+  display: block;
+  animation: headerDropdownFade 0.2s ease-out;
+}
+
+@keyframes headerDropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header-search-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-search-form svg {
+  width: 16px;
+  height: 16px;
+  color: #25125a;
+  flex-shrink: 0;
+}
+
+.header-search-form input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 13.5px;
+  background: transparent;
+  color: #25125a;
+}
+
+.header-search-form button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: #25125a;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.18s ease;
+}
+
+.header-search-form button:hover {
+  background: #180a3d;
+}
+
+.header-search-form button svg {
+  width: 14px;
+  height: 14px;
+  color: #ffffff;
+}
+
+/* Patient Portal Pill Button (#25125a) */
+.action-user {
+  background: #25125a;
+  color: #ffffff !important;
+  border: 1px solid #25125a;
+  font-weight: 600;
+  padding: 0 22px;
+}
+
+.action-user .anim-label svg {
+  width: 16px;
+  height: 16px;
+  color: #ffffff;
+}
+
+.action-user:hover {
+  background: #180a3d;
+  border-color: #180a3d;
+  color: #ffffff !important;
+}
+
+/* Mobile Menu Toggle Button */
+.menu-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid rgba(37, 18, 90, 0.2);
+  background: #ffffff;
+  color: #25125a;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.18s ease;
+}
+
+.menu-toggle:hover {
+  border-color: #25125a;
+  color: #25125a;
+}
+
+.menu-toggle svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* 2. Bottom Tier Header (Navigation Menu Bar - Unico Signature Style) */
+.header-bottom {
+  background: #ffffff;
+  border-top: none;
+  position: relative;
+}
+
+.header-bottom-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.header-bottom .primary-navigation {
+  width: 100%;
+  border-top: 1px solid rgba(37, 18, 90, 0.16); /* Precisely aligned with logo start and button end */
+  position: relative;
+}
+
+.header-bottom .navigation-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-wrap: nowrap;
+}
+
+.header-bottom .navigation-item {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.header-bottom .navigation-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 18px 0;
+  color: #000000;
+  font-size: clamp(13px, 1.05vw, 15px);
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.22s ease;
   white-space: nowrap;
 }
 
-.utility-nav a:hover,
-.utility-nav a:focus-visible {
-  color: #fff;
+/* Unico Signature Active & Hover Indicator (top: -1px colored bar) in #25125a */
+.header-bottom .navigation-link::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #25125a;
+  border-radius: 10px;
+  transition: width 0.3s ease;
 }
 
-.utility-nav svg {
-  width: 14px;
-  height: 14px;
-  flex: none;
+.header-bottom .navigation-item.active .navigation-link,
+.header-bottom .navigation-link:hover {
+  color: #000000; /* Stays pure black on hover as requested */
+}
+
+.header-bottom .navigation-item.active .navigation-link::after,
+.header-bottom .navigation-link:hover::after {
+  width: 100%;
 }
 
 .mobile-utility-links {
   display: none;
-}
-
-.mainbar {
-  position: relative;
-  background:
-    radial-gradient(ellipse at 82% 28%, rgb(13 148 136 / 9%), transparent 34%),
-    linear-gradient(115deg, #f0fdfa 0%, #ffffff 54%, #f8fafc 100%);
-  border-bottom: 1px solid var(--health-line);
-}
-
-.mainbar-inner {
-  display: grid;
-  min-height: 76px;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: 22px;
-}
-
-.brand-mark {
-  display: inline-grid;
-  width: 44px;
-  height: 44px;
-  place-items: center;
-}
-
-.brand-mark img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.primary-navigation {
-  min-width: 0;
-  justify-self: center;
-  margin-inline: auto;
-}
-
-.navigation-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: clamp(10px, 1.3vw, 20px);
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.navigation-item {
-  flex: none;
-}
-
-.navigation-link {
-  display: inline-flex;
-  min-height: 42px;
-  align-items: center;
-  padding: 6px 4px;
-  color: var(--health-ink);
-  font-size: 15px;
-  font-weight: 500;
-  white-space: nowrap;
-}
-
-.navigation-link:hover,
-.navigation-link:focus-visible {
-  color: var(--health-primary);
-}
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 9px;
-}
-
-.subscription-button {
-  display: inline-flex;
-  min-height: 42px;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 6px;
-  padding: 0 4px;
-  color: #054E3B;
-  font-size: 14px;
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.subscription-button:hover,
-.subscription-button:focus-visible {
-  color: #03382a;
-}
-
-.subscription-button svg {
-  width: 17px;
-  height: 17px;
-  flex: none;
-}
-
-.emergency-button {
-  display: inline-flex;
-  min-height: 42px;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 8px;
-  padding: 0 14px;
-  border: 1px solid var(--health-red);
-  border-radius: 8px;
-  color: var(--health-red);
-  background: transparent;
-  font-size: 14px;
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-.emergency-button:hover,
-.emergency-button:focus-visible {
-  border-color: #b91c1c;
-  color: #b91c1c;
-}
-
-.login-button {
-  display: inline-flex;
-  min-height: 40px;
-  align-items: center;
-  justify-content: center;
-  padding: 0 16px;
-  border: 1px solid var(--health-primary);
-  border-radius: 5px;
-  color: var(--health-primary);
-  background: transparent;
-  font-size: 14px;
-  font-weight: 600;
-  white-space: nowrap;
-  transition: all .18s ease;
-}
-
-.login-button:hover,
-.login-button:focus-visible {
-  border-color: var(--health-primary-dark);
-  color: var(--health-primary-dark);
-  background: rgba(13, 148, 136, 0.05);
-}
-
-.emergency-button svg:last-child,
-.subscription-button svg:last-child {
-  width: 15px;
-  height: 15px;
-  transition: transform .18s ease;
-}
-
-.emergency-button:hover svg:last-child,
-.subscription-button:hover svg:last-child {
-  transform: translateX(3px);
-}
-
-.emergency-button svg {
-  width: 18px;
-  height: 18px;
-}
-
-.menu-toggle {
-  display: none;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  border: 1px solid var(--health-line);
-  border-radius: 9px;
-  color: var(--health-ink);
-  background: #fff;
-  cursor: pointer;
-}
-
-.menu-toggle svg {
-  width: 21px;
-  height: 21px;
 }
 
 .page-content {
@@ -1026,175 +1201,109 @@ a {
   margin: 18px auto 0;
 }
 
-@media (max-width: 1140px) {
-  .header-container {
-    padding-inline: 16px;
-  }
-
-  .mainbar-inner {
-    min-height: 70px;
-    grid-template-columns: 44px 42px auto;
-    justify-content: space-between;
-    gap: 14px;
-  }
-
-  .header-actions {
-    grid-column: 3;
-    grid-row: 1;
-    gap: 7px;
-  }
-
-  .subscription-button {
-    min-height: 40px;
-    padding-inline: 4px;
-    font-size: 12px;
-  }
-
-  .menu-toggle {
-    display: grid;
-    grid-column: 2;
-  }
-
-  .primary-navigation {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    display: none;
-    max-height: calc(100dvh - 108px);
-    overflow-y: auto;
-    padding: 8px max(16px, calc((1250px - 100%) / 2 + 16px));
-    border-top: 1px solid var(--health-line);
-    background: #fff;
-    box-shadow: 0 12px 20px rgb(20 55 50 / 9%);
-  }
-
-  .primary-navigation.is-open {
-    display: block;
-  }
-
-  .navigation-list {
-    display: block;
-  }
-
-  .navigation-item {
-    border-bottom: 1px solid #f0f3f2;
-  }
-
-  .navigation-link {
-    width: 100%;
-    min-height: 44px;
-    font-size: 15px;
-    font-weight: 500;
-  }
-
-  .emergency-button,
-  .login-button {
-    min-height: 38px;
-    padding-inline: 12px;
+@media (max-width: 1180px) {
+  .action-pill {
+    padding: 0 12px;
     font-size: 13px;
+  }
+  .header-bottom .navigation-link {
+    font-size: 13.5px;
+    padding: 14px 2px;
   }
 }
 
-@media (max-width: 900px) {
-  .utility-nav {
+@media (max-width: 991px) {
+  .header-action-list .action-item:not(.search-item) {
     display: none;
   }
-
-  .mobile-utility-links {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2px 12px;
-    padding-block: 10px 4px;
-    border-top: 1px solid var(--health-line);
-  }
-
-  .mobile-utility-links a {
+  .menu-toggle {
     display: inline-flex;
-    min-height: 42px;
+  }
+  .header-bottom {
+    border-top: none;
+  }
+  .header-bottom-inner {
+    border-top: none;
+  }
+  .header-bottom .primary-navigation {
+    border-top: none;
+  }
+  .primary-navigation {
+    position: fixed;
+    top: 65px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    display: none;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  .primary-navigation.is-open {
+    display: flex;
+  }
+  .header-bottom .navigation-list {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0;
+  }
+  .header-bottom .navigation-item {
+    width: 100%;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  .header-bottom .navigation-link {
+    width: 100%;
+    padding: 14px 4px;
+    font-size: 15px;
+  }
+  .header-bottom .navigation-link::after {
+    display: none;
+  }
+  .mobile-utility-links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 16px;
+    margin-top: 12px;
+    border-top: 2px solid #f1f5f9;
+  }
+  .mobile-utility-links a {
+    display: flex;
     align-items: center;
-    gap: 8px;
-    color: var(--health-ink);
-    font-size: 13px;
+    gap: 10px;
+    padding: 10px 4px;
+    color: #25125a;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
   }
-
-  .mobile-utility-links a:hover,
-  .mobile-utility-links a:focus-visible {
-    color: var(--health-primary);
+  .mobile-utility-links a:hover {
+    color: var(--health-primary-dark);
   }
-
-  .mobile-utility-links svg {
-    width: 16px;
-    height: 16px;
-    flex: none;
+  .mobile-utility-links a svg {
+    width: 18px;
+    height: 18px;
+    color: #25125a;
+    flex-shrink: 0;
+  }
+  .mobile-utility-links a svg.whatsapp-icon {
+    color: #25D366;
   }
 }
 
-@media (max-width: 680px) {
-  .header-container {
-    padding-inline: 14px;
-  }
-
-  .topbar-inner {
-    min-height: 36px;
-    justify-content: flex-start;
-  }
-
-  .welcome-message {
-    font-size: 11px;
-  }
-
-  .mainbar-inner {
-    min-height: 64px;
-    grid-template-columns: 40px 38px minmax(0, auto);
-    gap: 9px;
-  }
-
-  .brand-mark {
-    width: 38px;
+@media (max-width: 580px) {
+  .brand-logo img {
     height: 38px;
   }
-
-  .menu-toggle {
-    width: 38px;
-    height: 38px;
+  .header-search-dropdown {
+    width: 270px;
+    right: -40px;
   }
-
-  .emergency-button,
-  .login-button {
-    min-height: 36px;
-    padding-inline: 10px;
-    font-size: 11px;
-  }
-
-  .emergency-button svg:last-child,
-.subscription-button svg:last-child {
-  width: 15px;
-  height: 15px;
-  transition: transform .18s ease;
 }
-
-.emergency-button:hover svg:last-child,
-.subscription-button:hover svg:last-child {
-  transform: translateX(3px);
-}
-
-.emergency-button svg {
-    width: 16px;
-    height: 16px;
-  }
-
-  .subscription-button {
-    min-height: 38px;
-    gap: 4px;
-    padding-inline: 4px;
-    font-size: 11px;
-  }
-
-  .subscription-button svg {
-    width: 15px;
-    height: 15px;
-  }
 
   .hero-section {
     padding: 55px 14px 42px;
