@@ -76,8 +76,56 @@ $currentUri = $_SERVER['REQUEST_URI'] ?? '';
     <div class="header-container header-bottom-inner">
       <nav class="primary-navigation" id="primary-navigation" aria-label="Primary navigation">
         <ul class="navigation-list">
-          <li class="navigation-item <?= (strpos($currentUri, 'find-doctor') !== false) ? 'active' : '' ?>">
-            <a class="navigation-link" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/find-doctor">Find a Doctor</a>
+          <li class="navigation-item has-dropdown <?= (strpos($currentUri, 'find-doctor') !== false) ? 'active' : '' ?>">
+            <a class="navigation-link" href="javascript:void(0)" role="button" aria-expanded="false" aria-haspopup="true">
+              <span>Find a Doctor</span>
+              <svg class="dropdown-caret" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <!-- Unico Style 2-Column Submenu -->
+            <div class="inner-dropdown-menu">
+              <div class="dropdown-columns-wrap">
+                <ul class="dropdown-column">
+                  <li>
+                    <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/find-doctor?category=near-you" class="dropdown-link">
+                      <span class="dropdown-icon"><i data-lucide="map-pin" aria-hidden="true"></i></span>
+                      <span class="dropdown-text">Find Special Doctor Near You</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/find-doctor?category=easy-healthcare" class="dropdown-link">
+                      <span class="dropdown-icon"><i data-lucide="shield-check" aria-hidden="true"></i></span>
+                      <span class="dropdown-text">Easy Healthcare Special Doctor</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/find-doctor?category=dhaka-city" class="dropdown-link">
+                      <span class="dropdown-icon"><i data-lucide="building-2" aria-hidden="true"></i></span>
+                      <span class="dropdown-text">Dhaka City Special Doctor</span>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="dropdown-column">
+                  <li>
+                    <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/find-doctor?category=metro-city" class="dropdown-link">
+                      <span class="dropdown-icon"><i data-lucide="landmark" aria-hidden="true"></i></span>
+                      <span class="dropdown-text">Metro City Special Doctor</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/find-doctor?category=selected-hospitals" class="dropdown-link">
+                      <span class="dropdown-icon"><i data-lucide="cross" aria-hidden="true"></i></span>
+                      <span class="dropdown-text">Selected Hospital Special Doctor</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/find-doctor?category=international" class="dropdown-link">
+                      <span class="dropdown-icon"><i data-lucide="globe" aria-hidden="true"></i></span>
+                      <span class="dropdown-text">Book International Special Doctor</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li class="navigation-item <?= (strpos($currentUri, 'online-doctor-consult') !== false) ? 'active' : '' ?>">
             <a class="navigation-link" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/online-doctor-consult">Online Video Consult</a>

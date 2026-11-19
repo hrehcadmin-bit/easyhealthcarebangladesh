@@ -16,11 +16,29 @@ document.addEventListener("DOMContentLoaded", () => {
       navigation.classList.toggle("is-open", shouldOpen);
     });
 
-    navigation.querySelectorAll(".navigation-link").forEach((link) => {
+    // Mobile dropdown toggle for submenus
+    const dropdownToggles = navigation.querySelectorAll(".has-dropdown > .navigation-link");
+    dropdownToggles.forEach((toggle) => {
+      toggle.addEventListener("click", (e) => {
+        if (window.innerWidth <= 991) {
+          e.preventDefault();
+          e.stopPropagation();
+          const parent = toggle.closest(".has-dropdown");
+          if (parent) {
+            const isOpen = parent.classList.toggle("mobile-open");
+            toggle.setAttribute("aria-expanded", String(isOpen));
+          }
+        }
+      });
+    });
+
+    navigation.querySelectorAll(".navigation-link:not(.has-dropdown > .navigation-link), .dropdown-link").forEach((link) => {
       link.addEventListener("click", () => {
-        navigation.classList.remove("is-open");
-        menuToggle.setAttribute("aria-expanded", "false");
-        menuToggle.setAttribute("aria-label", "Open menu");
+        if (window.innerWidth <= 991) {
+          navigation.classList.remove("is-open");
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.setAttribute("aria-label", "Open menu");
+        }
       });
     });
   }
