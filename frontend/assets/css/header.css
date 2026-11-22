@@ -2,15 +2,22 @@
 
 :root {
   color-scheme: light;
-  --health-primary: #25125a;
-  --health-primary-dark: #180a3d;
-  --health-secondary: #1D4ED8;
-  --health-emergency: #DC2626;
-  --health-warning: #D97706;
-  --health-ink: #25125a;
-  --health-muted: #6b7280;
-  --health-line: #e5e7eb;
-  --health-red: #DC2626;
+  --health-primary: #084463;
+  --health-primary-dark: #0E6973;
+  --health-secondary: #2C3E68;
+  --health-accent: #118C8C;
+  --health-cyan: #6BB9D4;
+  --health-gold: #FFC64F;
+  --health-amber: #BF820F;
+  --health-mint: #BAD9CE;
+  --health-ink: #0D1326;
+  --health-muted: #5A6FA8;
+  --health-line: #BAD9CE;
+  --health-success: #5CA623;
+  --health-whatsapp: #5CA623;
+  --health-emergency: #BF820F;
+  --health-warning: #FFC64F;
+  --health-red: #BF820F;
 }
 
 * {
@@ -166,52 +173,52 @@ a {
   transform: translateY(0);
 }
 
-/* Email Pill: #25125a border, no bg */
+/* Email Pill: #084463 border, no bg */
 .action-email {
-  border: 1px solid #25125a;
-  color: #25125a;
+  border: 1px solid #084463;
+  color: #084463;
 }
 
 .action-email .anim-label svg {
-  color: #25125a;
+  color: #084463;
   width: 16px;
   height: 16px;
   flex-shrink: 0;
 }
 
 .action-email:hover {
-  border-color: #25125a;
-  color: #25125a;
-  background: rgba(37, 18, 90, 0.05);
+  border-color: #0E6973;
+  color: #0E6973;
+  background: rgba(8, 68, 99, 0.05);
 }
 
-/* WhatsApp Pill: #25125a border, no bg */
+/* WhatsApp Pill: #084463 border, no bg */
 .action-whatsapp {
-  border: 1px solid #25125a;
-  color: #25125a;
+  border: 1px solid #084463;
+  color: #084463;
 }
 
 .action-whatsapp .anim-label svg.whatsapp-icon,
 .action-whatsapp .anim-label .whatsapp-icon {
-  color: #25D366;
+  color: #5CA623;
   width: 16px;
   height: 16px;
   flex-shrink: 0;
 }
 
 .action-whatsapp:hover {
-  border-color: #25125a;
-  color: #25125a;
-  background: rgba(37, 18, 90, 0.05);
+  border-color: #5CA623;
+  color: #5CA623;
+  background: rgba(92, 166, 35, 0.05);
 }
 
-/* Circular Search Button (#25125a) */
+/* Circular Search Button (#084463) */
 .action-search-btn {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #25125a;
-  border: 1px solid #25125a;
+  background: #084463;
+  border: 1px solid #084463;
   color: #ffffff;
   display: inline-flex;
   align-items: center;
@@ -242,8 +249,8 @@ a {
 }
 
 .action-search-btn:hover {
-  background: #180a3d;
-  border-color: #180a3d;
+  background: #0E6973;
+  border-color: #0E6973;
 }
 
 .action-search-btn:hover .anim-label:nth-child(1) {
@@ -267,10 +274,10 @@ a {
   right: 0;
   width: 320px;
   background: #ffffff;
-  border: 1px solid rgba(37, 18, 90, 0.15);
+  border: 1px solid rgba(8, 68, 99, 0.15);
   border-radius: 12px;
   padding: 8px 10px;
-  box-shadow: 0 10px 30px rgba(37, 18, 90, 0.12);
+  box-shadow: 0 10px 30px rgba(8, 68, 99, 0.12);
   display: none;
   z-index: 100;
 }
@@ -300,7 +307,7 @@ a {
 .header-search-form svg {
   width: 16px;
   height: 16px;
-  color: #25125a;
+  color: #084463;
   flex-shrink: 0;
 }
 
@@ -310,7 +317,7 @@ a {
   outline: none;
   font-size: 13.5px;
   background: transparent;
-  color: #25125a;
+  color: #0D1326;
 }
 
 .header-search-form button {
@@ -318,7 +325,7 @@ a {
   height: 30px;
   border-radius: 50%;
   border: none;
-  background: #25125a;
+  background: #084463;
   color: #ffffff;
   display: inline-flex;
   align-items: center;
@@ -329,7 +336,7 @@ a {
 }
 
 .header-search-form button:hover {
-  background: #180a3d;
+  background: #0E6973;
 }
 
 .header-search-form button svg {
@@ -338,11 +345,11 @@ a {
   color: #ffffff;
 }
 
-/* Patient Portal Pill Button (#25125a) */
+/* Patient Portal Pill Button (#084463) */
 .action-user {
-  background: #25125a;
+  background: #084463;
   color: #ffffff !important;
-  border: 1px solid #25125a;
+  border: 1px solid #084463;
   font-weight: 600;
   padding: 0 22px;
 }
@@ -354,8 +361,8 @@ a {
 }
 
 .action-user:hover {
-  background: #180a3d;
-  border-color: #180a3d;
+  background: #0E6973;
+  border-color: #0E6973;
   color: #ffffff !important;
 }
 
@@ -365,9 +372,9 @@ a {
   width: 40px;
   height: 40px;
   border-radius: 8px;
-  border: 1px solid rgba(37, 18, 90, 0.2);
+  border: 1px solid rgba(8, 68, 99, 0.2);
   background: #ffffff;
-  color: #25125a;
+  color: #084463;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -376,8 +383,8 @@ a {
 }
 
 .menu-toggle:hover {
-  border-color: #25125a;
-  color: #25125a;
+  border-color: #084463;
+  color: #084463;
 }
 
 .menu-toggle svg {
@@ -399,7 +406,7 @@ a {
 
 .header-bottom .primary-navigation {
   width: 100%;
-  border-top: 1px solid rgba(37, 18, 90, 0.16); /* Precisely aligned with logo start and button end */
+  border-top: 1px solid rgba(8, 68, 99, 0.16); /* Precisely aligned with logo start and button end */
 }
 
 .header-bottom .navigation-list {
@@ -421,8 +428,8 @@ a {
 .header-bottom .navigation-link {
   display: inline-flex;
   align-items: center;
-  padding: 18px 0;
-  color: #000000;
+  padding: 16px 0;
+  color: #0D1326;
   font-size: clamp(13px, 1.05vw, 15px);
   font-weight: 600;
   text-decoration: none;
@@ -431,7 +438,7 @@ a {
   white-space: nowrap;
 }
 
-/* Unico Signature Active & Hover Indicator (top: -1px colored bar) in #25125a */
+/* Unico Signature Active & Hover Indicator (top: -1px colored bar) in #084463 */
 .header-bottom .navigation-link::after {
   content: "";
   position: absolute;
@@ -439,14 +446,14 @@ a {
   left: 0;
   width: 0;
   height: 3px;
-  background-color: #25125a;
+  background-color: #084463;
   border-radius: 10px;
   transition: width 0.3s ease;
 }
 
 .header-bottom .navigation-item.active .navigation-link,
 .header-bottom .navigation-link:hover {
-  color: #000000; /* Stays pure black on hover as requested */
+  color: #0D1326; /* Stays signature dark on hover as requested */
 }
 
 .header-bottom .navigation-item.active .navigation-link::after,
@@ -468,7 +475,7 @@ a {
   background: #ffffff;
   border: none !important;
   box-shadow: none !important;
-  padding: 30px 0 34px 0;
+  padding: 24px 0 28px 0;
   display: none;
   z-index: 1050;
 }
@@ -484,8 +491,8 @@ a {
   margin-inline: auto;
   padding-inline: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px 64px;
+  grid-template-columns: repeat(2, max-content);
+  gap: 10px 20px; /* Column gap 20px as requested */
   background: transparent;
   padding-block: 0;
   border: none !important;
@@ -498,7 +505,7 @@ a {
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 
 .dropdown-column li {
@@ -509,19 +516,20 @@ a {
 
 .dropdown-link {
   display: block;
-  padding: 6px 0;
-  color: #041d2c;
-  font-size: 15px;
-  font-weight: 500;
+  padding: 4px 12px 4px 0;
+  color: #0D1326;
+  font-size: 13.5px; /* Smaller font size as requested */
+  font-weight: 400; /* 400 weight as requested */
   text-decoration: none;
   background: transparent;
   border: none !important;
   transition: color 0.15s ease;
   transform: none !important;
+  white-space: nowrap;
 }
 
 .dropdown-link:hover {
-  color: #25125a;
+  color: #084463;
   background: transparent;
   transform: none !important;
 }
@@ -1353,9 +1361,11 @@ a {
     border: none !important;
   }
   .dropdown-link {
-    padding: 8px 0;
-    font-size: 14px;
+    padding: 6px 0;
+    font-size: 13.5px;
+    font-weight: 400;
     white-space: normal;
+    color: #0D1326;
   }
   .mobile-utility-links {
     display: flex;
@@ -1370,7 +1380,7 @@ a {
     align-items: center;
     gap: 10px;
     padding: 10px 4px;
-    color: #25125a;
+    color: #0D1326;
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
@@ -1381,11 +1391,11 @@ a {
   .mobile-utility-links a svg {
     width: 18px;
     height: 18px;
-    color: #25125a;
+    color: #084463;
     flex-shrink: 0;
   }
   .mobile-utility-links a svg.whatsapp-icon {
-    color: #25D366;
+    color: #5CA623;
   }
 }
 
