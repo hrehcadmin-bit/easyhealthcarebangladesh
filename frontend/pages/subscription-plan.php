@@ -15,14 +15,21 @@ $plans = [
     'yearly_savings' => 'Save ৳589 / Year (16% Off)',
     'featured' => false,
     'badge' => '',
-    'btn_text' => 'Get Starter Plan',
-    'btn_class' => 'pricing-card-btn pricing-card-btn-outline',
     'features' => [
       '1 Free Specialist Doctor Video Consultation per month',
       '10% Flat Discount on all diagnostic & lab tests',
       'Digital prescription and cloud medical record storage',
       '24/7 Dedicated health helpline & chat support',
       '5% Special discount on partner pharmacy medicine orders',
+    ],
+    'details' => [
+      'Target Member' => 'Individual personal health protection (1 person)',
+      'Doctor Consultation' => '1 Free Specialist Video Consultation every month',
+      'Diagnostic Discount' => '10% Flat Discount across all partner diagnostic labs & hospitals',
+      'Prescription & Records' => 'Cloud medical record vault and digital prescription archiving for lifetime',
+      'Pharmacy Benefit' => '5% Special discount on medicine delivery via partner pharmacies',
+      'Customer Support' => '24/7 dedicated online health helpline & chat support',
+      'Plan Renewal' => 'Cancel anytime or auto-renew without hidden charges',
     ],
   ],
   [
@@ -36,14 +43,21 @@ $plans = [
     'yearly_savings' => 'Save ৳1,198 / Year (17% Off)',
     'featured' => false,
     'badge' => '',
-    'btn_text' => 'Get Pro Plan',
-    'btn_class' => 'pricing-card-btn pricing-card-btn-outline',
     'features' => [
       '2 Free Specialist Doctor Video Consultations per month',
       '20% Flat Discount on all pathology & imaging investigations',
       'Free in-home blood & pathology sample collection',
       'Continuous health profile tracking & vitals log',
       '10% Special discount on partner pharmacy medicine orders',
+    ],
+    'details' => [
+      'Target Member' => 'Active individuals, young professionals & executives (1 person)',
+      'Doctor Consultation' => '2 Free Specialist Video Consultations per month',
+      'Diagnostic Discount' => '20% Flat Discount on all pathology, blood tests, and ultrasound imaging',
+      'Sample Collection' => 'Free in-home blood sample collection across Dhaka & major metro zones',
+      'Health Tracking' => 'Continuous vitals recording & digital chronic risk assessment',
+      'Pharmacy Benefit' => '10% Special discount on prescribed medicine orders',
+      'Plan Renewal' => 'Instant digital membership activation with flexible billing cycles',
     ],
   ],
   [
@@ -57,8 +71,6 @@ $plans = [
     'yearly_savings' => 'Save ৳2,398 / Year (17% Off)',
     'featured' => false,
     'badge' => '',
-    'btn_text' => 'Get Shield Plan',
-    'btn_class' => 'pricing-card-btn pricing-card-btn-outline',
     'features' => [
       'Full health coverage for up to 3 family members',
       '4 Free Specialist Doctor Video Consultations per month',
@@ -66,6 +78,15 @@ $plans = [
       'Free unlimited home sample collections for all members',
       '15% Special discount on emergency ambulance service',
       'Dedicated family health records dashboard',
+    ],
+    'details' => [
+      'Target Member' => 'Couples & small families (Up to 3 members included)',
+      'Doctor Consultation' => '4 Free Specialist Video Consultations per month shared among family',
+      'Diagnostic Discount' => '25% Flat Discount on all diagnostic, pathology & radiology investigations',
+      'Sample Collection' => 'Unlimited free home sample pickup for all registered members',
+      'Emergency Ambulance' => '15% Special discount on 24/7 citywide emergency ambulance transfer',
+      'Family Portal' => 'Single-dashboard management for adding spouses, kids, or parents',
+      'Plan Renewal' => 'Digital membership card instantly generated for every family member',
     ],
   ],
   [
@@ -79,8 +100,6 @@ $plans = [
     'yearly_savings' => 'Save ৳3,998 / Year (17% Off)',
     'featured' => true,
     'badge' => 'Most Popular',
-    'btn_text' => 'Get Family Plan',
-    'btn_class' => 'pricing-card-btn',
     'features' => [
       'Full coverage for up to 5 family members',
       '6 Free Specialist Doctor Video Consultations per month',
@@ -88,6 +107,15 @@ $plans = [
       '1 Free Annual Routine Full Body health checkup',
       'Free priority home sample collections',
       '25% Special discount on emergency ambulance booking',
+    ],
+    'details' => [
+      'Target Member' => 'Complete families (Up to 5 members: parents, spouse, children)',
+      'Doctor Consultation' => '6 Free Specialist Consultations per month across all departments',
+      'Diagnostic Discount' => '30% Flat Discount on all blood tests, MRI, CT, and ECG tests',
+      'Annual Health Checkup' => '1 Free Annual Routine Full Body Checkup profile included per year',
+      'Emergency Ambulance' => '25% Special discount with priority emergency dispatch protocol',
+      'Sample Collection' => 'Priority home blood and urine sample collections with fastest reporting',
+      'Family Portal' => 'Comprehensive family health monitoring & automatic appointment reminders',
     ],
   ],
   [
@@ -101,8 +129,6 @@ $plans = [
     'yearly_savings' => 'Save ৳4,998 / Year (17% Off)',
     'featured' => false,
     'badge' => 'Elder Care',
-    'btn_text' => 'Get Senior Plan',
-    'btn_class' => 'pricing-card-btn pricing-card-btn-outline',
     'features' => [
       'Dedicated chronic illness management (Diabetes, Cardiac, BP)',
       '2 Senior Specialist home visits or video consults per month',
@@ -110,6 +136,15 @@ $plans = [
       'Free monthly in-home blood glucose & BP vitals checkup',
       'Dedicated 24/7 Personal Health Coordinator assigned',
       'Priority emergency ambulance dispatch',
+    ],
+    'details' => [
+      'Target Member' => 'Senior citizens, elderly parents & chronic disease patients (1-2 persons)',
+      'Chronic Care' => 'Dedicated management protocols for Diabetes, Hypertension, Cardiac & Kidney care',
+      'Doctor Visits' => '2 Senior Specialist doctor home visits or video consults every month',
+      'Diagnostic Discount' => '35% Maximum discount across partner diagnostic centers and hospitals',
+      'Monthly Checkup' => 'Free monthly in-home nurse/phlebotomist visit for sugar & BP monitoring',
+      'Personal Coordinator' => 'Assigned Personal Care Manager to handle appointments and prescriptions',
+      'Emergency Response' => 'VIP emergency hotline & priority ambulance routing',
     ],
   ],
   [
@@ -123,8 +158,6 @@ $plans = [
     'yearly_savings' => 'Save ৳7,998 / Year (17% Off)',
     'featured' => true,
     'badge' => 'VIP Platinum',
-    'btn_text' => 'Get VIP Plan',
-    'btn_class' => 'pricing-card-btn',
     'features' => [
       'Unlimited 24/7 General Physician video consultations',
       '4 Super-Specialist Doctor video consultations per month',
@@ -132,6 +165,15 @@ $plans = [
       '1 Free Emergency Ambulance transfer per year',
       'Dedicated Senior Doctor Concierge & VIP hospital admission support',
       'Annual comprehensive Executive Master Health Checkup',
+    ],
+    'details' => [
+      'Target Member' => 'Corporate executives, business leaders & VIP families (Up to 6 members)',
+      'Doctor Access' => 'Unlimited 24/7 General Physician consultations + 4 Super-Specialist consults/mo',
+      'Diagnostic Discount' => '40% Maximum discount on all lab tests, diagnostics & hospital admissions',
+      'Free Ambulance' => '1 Free Emergency Ambulance transfer per year within the metropolitan area',
+      'Doctor Concierge' => 'Dedicated Senior Doctor Concierge for fast-track VIP hospital admissions',
+      'Executive Checkup' => '1 Free Comprehensive Executive Master Health Checkup profile per year',
+      'Priority Privilege' => 'Direct phone and WhatsApp line with clinical directors and managers',
     ],
   ],
 ];
@@ -237,7 +279,7 @@ $faqs = [
     <div class="doctor-main-wrap" id="plans-section">
       <div class="doctor-content-container">
 
-        <!-- 1. Pricing Plans Grid (6 Cards, 5px radius, Header Gradient) -->
+        <!-- 1. Pricing Plans Grid (6 Cards, 2 Buttons: More Details & Book Plan) -->
         <div class="doctor-block">
           <div class="doctor-block-header">
             <p class="doctor-block-eyebrow">Choose Your Plan</p>
@@ -259,7 +301,7 @@ $faqs = [
 
           <div class="pricing-grid">
             <?php foreach ($plans as $plan): ?>
-              <article class="pricing-card <?= $plan['featured'] ? 'pricing-card-featured' : '' ?>">
+              <article class="pricing-card <?= $plan['featured'] ? 'pricing-card-featured' : '' ?>" id="card-<?= htmlspecialchars($plan['id'], ENT_QUOTES, 'UTF-8') ?>">
                 <?php if (!empty($plan['badge'])): ?>
                   <span class="pricing-featured-badge"><?= htmlspecialchars($plan['badge'], ENT_QUOTES, 'UTF-8') ?></span>
                 <?php endif; ?>
@@ -286,10 +328,23 @@ $faqs = [
                   <?php endforeach; ?>
                 </ul>
 
-                <a href="tel:09611833596" class="<?= $plan['btn_class'] ?>">
-                  <span><?= htmlspecialchars($plan['btn_text'], ENT_QUOTES, 'UTF-8') ?></span>
-                  <i data-lucide="arrow-right" aria-hidden="true"></i>
-                </a>
+                <!-- Two Buttons per User Request: 1 with Border (More Details), 1 with BG (Book Plan) -->
+                <div class="pricing-card-actions">
+                  <button type="button" class="pricing-btn pricing-btn-outline plan-details-trigger"
+                    data-plan-id="<?= htmlspecialchars($plan['id'], ENT_QUOTES, 'UTF-8') ?>"
+                    data-plan-name="<?= htmlspecialchars($plan['name'], ENT_QUOTES, 'UTF-8') ?>"
+                    data-plan-badge="<?= htmlspecialchars($plan['badge'], ENT_QUOTES, 'UTF-8') ?>"
+                    data-plan-sub="<?= htmlspecialchars($plan['subtitle'], ENT_QUOTES, 'UTF-8') ?>"
+                    data-plan-monthly="<?= htmlspecialchars($plan['monthly_price'], ENT_QUOTES, 'UTF-8') ?>"
+                    data-plan-yearly="<?= htmlspecialchars($plan['yearly_price'], ENT_QUOTES, 'UTF-8') ?>"
+                    data-plan-details='<?= htmlspecialchars(json_encode($plan['details'], JSON_UNESCAPED_UNICODE), ENT_QUOTES, 'UTF-8') ?>'>
+                    <span>More Details</span>
+                  </button>
+                  <a href="tel:09611833596" class="pricing-btn pricing-btn-fill">
+                    <span>Book Plan</span>
+                    <i data-lucide="arrow-right" aria-hidden="true"></i>
+                  </a>
+                </div>
               </article>
             <?php endforeach; ?>
           </div>
@@ -356,11 +411,42 @@ $faqs = [
     </div>
   </main>
 
+  <!-- Plan Details Modal Component -->
+  <div class="plan-details-modal-backdrop" id="planDetailsModal" aria-hidden="true" role="dialog" aria-labelledby="modalPlanTitle">
+    <div class="plan-details-modal-box">
+      <button type="button" class="plan-details-modal-close" id="modalCloseBtn" aria-label="Close details">&times;</button>
+      <div class="plan-details-modal-header">
+        <span class="plan-details-modal-badge" id="modalPlanBadge" style="display: none;"></span>
+        <h3 class="plan-details-modal-title" id="modalPlanTitle">Plan Name</h3>
+        <p class="plan-details-modal-sub" id="modalPlanSub">Subtitle</p>
+        <div class="plan-details-modal-pricing">
+          <span class="modal-currency">৳</span>
+          <span class="modal-amount" id="modalPlanPrice">0</span>
+          <span class="modal-period" id="modalPlanPeriod">BDT / Month</span>
+        </div>
+      </div>
+      <div class="plan-details-modal-body">
+        <h4 class="modal-section-heading">Detailed Benefits & Coverage Specifications:</h4>
+        <ul class="modal-spec-list" id="modalPlanSpecs"></ul>
+      </div>
+      <div class="plan-details-modal-footer">
+        <button type="button" class="pricing-btn pricing-btn-outline" id="modalDismissBtn">Close</button>
+        <a href="tel:09611833596" class="pricing-btn pricing-btn-fill">
+          <span>Book This Plan</span>
+          <i data-lucide="phone-call" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
   <?php require __DIR__ . '/../includes/footer.php'; ?>
 
-  <!-- Switcher JavaScript -->
+  <!-- Interactive JavaScript: Billing Switcher & Details Modal -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
+      let isYearlyBilling = false;
+
+      // 1. Billing Switcher
       const toggleBtn = document.getElementById('billingToggle');
       const labelMonthly = document.getElementById('billing-label-monthly');
       const labelYearly = document.getElementById('billing-label-yearly');
@@ -369,6 +455,7 @@ $faqs = [
       const yearlyNotes = document.querySelectorAll('.pricing-yearly-note');
 
       function setBillingMode(isYearly) {
+        isYearlyBilling = isYearly;
         if (!toggleBtn) return;
         toggleBtn.classList.toggle('is-yearly', isYearly);
         toggleBtn.setAttribute('aria-checked', String(isYearly));
@@ -393,8 +480,7 @@ $faqs = [
 
       if (toggleBtn) {
         toggleBtn.addEventListener('click', function () {
-          const isCurrentlyYearly = toggleBtn.classList.contains('is-yearly');
-          setBillingMode(!isCurrentlyYearly);
+          setBillingMode(!isYearlyBilling);
         });
       }
 
@@ -409,6 +495,102 @@ $faqs = [
           setBillingMode(true);
         });
       }
+
+      // 2. More Details Modal
+      const modal = document.getElementById('planDetailsModal');
+      const modalClose = document.getElementById('modalCloseBtn');
+      const modalDismiss = document.getElementById('modalDismissBtn');
+      const modalTitle = document.getElementById('modalPlanTitle');
+      const modalSub = document.getElementById('modalPlanSub');
+      const modalBadge = document.getElementById('modalPlanBadge');
+      const modalPrice = document.getElementById('modalPlanPrice');
+      const modalPeriod = document.getElementById('modalPlanPeriod');
+      const modalSpecs = document.getElementById('modalPlanSpecs');
+      const detailButtons = document.querySelectorAll('.plan-details-trigger');
+
+      function openModal(btn) {
+        if (!modal) return;
+        const name = btn.getAttribute('data-plan-name') || '';
+        const badge = btn.getAttribute('data-plan-badge') || '';
+        const sub = btn.getAttribute('data-plan-sub') || '';
+        const monthly = btn.getAttribute('data-plan-monthly') || '0';
+        const yearly = btn.getAttribute('data-plan-yearly') || '0';
+        let detailsObj = {};
+
+        try {
+          detailsObj = JSON.parse(btn.getAttribute('data-plan-details') || '{}');
+        } catch (e) {
+          detailsObj = {};
+        }
+
+        modalTitle.textContent = name;
+        modalSub.textContent = sub;
+
+        if (badge.trim()) {
+          modalBadge.textContent = badge;
+          modalBadge.style.display = 'inline-block';
+        } else {
+          modalBadge.style.display = 'none';
+        }
+
+        if (isYearlyBilling) {
+          modalPrice.textContent = yearly;
+          modalPeriod.textContent = 'BDT / Year';
+        } else {
+          modalPrice.textContent = monthly;
+          modalPeriod.textContent = 'BDT / Month';
+        }
+
+        modalSpecs.innerHTML = '';
+        Object.keys(detailsObj).forEach(function (key) {
+          const li = document.createElement('li');
+          const lbl = document.createElement('span');
+          lbl.className = 'modal-spec-label';
+          lbl.textContent = key;
+          const val = document.createElement('span');
+          val.className = 'modal-spec-val';
+          val.textContent = detailsObj[key];
+          li.appendChild(lbl);
+          li.appendChild(val);
+          modalSpecs.appendChild(li);
+        });
+
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        if (!modal) return;
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      detailButtons.forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          openModal(btn);
+        });
+      });
+
+      if (modalClose) modalClose.addEventListener('click', closeModal);
+      if (modalDismiss) modalDismiss.addEventListener('click', closeModal);
+
+      if (modal) {
+        modal.addEventListener('click', function (e) {
+          if (e.target === modal) {
+            closeModal();
+          }
+        });
+      }
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && modal && modal.classList.contains('is-open')) {
+          closeModal();
+        }
+      });
     });
   </script>
 </body>

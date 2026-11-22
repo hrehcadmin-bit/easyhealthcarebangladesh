@@ -122,10 +122,13 @@ $currentUri = $_SERVER['REQUEST_URI'] ?? '';
             <a class="navigation-link" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/medical-tourism">Medical Tour</a>
           </li>
           <li class="navigation-item <?= (strpos($currentUri, 'ambulance-booking') !== false) ? 'active' : '' ?>">
-            <a class="navigation-link" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/ambulance-booking">Call Ambulance</a>
+            <a class="navigation-link nav-link-ambulance" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/ambulance-booking">Call Ambulance</a>
           </li>
           <li class="navigation-item <?= (strpos($currentUri, 'subscription-plan') !== false) ? 'active' : '' ?>">
-            <a class="navigation-link" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/subscription-plan">Subcription Plan</a>
+            <a class="navigation-link nav-link-subscription" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/subscription-plan">Subcription Plan</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link nav-link-membership" href="<?= htmlspecialchars($baseUrl ?? '.', ENT_QUOTES, 'UTF-8') ?>/subscription-plan#plans-section">Get Membership</a>
           </li>
         </ul>
 
